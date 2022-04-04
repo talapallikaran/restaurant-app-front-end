@@ -1,0 +1,287 @@
+/*
+Author       : Dreamguys
+Template Name: SmartHR - Bootstrap Admin Template
+Version      : 3.6
+*/
+
+/*============================
+ [Table of CSS]
+
+1. General
+2. Table
+3. Helper Class
+4. Bootstrap Classes
+5. Animation
+6. Toggle Button
+7. Modal
+8. Header
+9. Sidebar
+10. Content
+11. Login
+12. Dashboard
+13. Activity
+14. Select2
+15. Nav tabs
+16. Holidays
+17. Delete Modal
+18. Edit Profile
+19. Chat
+20. Focus Label
+21. Leave
+22. Employee
+23. Events
+24. Profile
+25. Notifications
+26. Roles & Permissions
+27. Chat Right Sidebar
+28. Projects
+29. Invoice
+30. Task
+31. Project View
+32. Payslip
+33. Attendance
+34. Ticket
+35. Client Profile
+36. Inbox
+37. Mail View
+38. Voice call
+39. Video Call
+40. Outgoing call
+41. Incoming call
+42. Contacts
+43. Chat Sidebar
+44. Jobs
+45. Job Details
+46. Notification Settings
+47. Leave Settings
+48. Termination
+49. Loader
+50. Payroll Items
+51. Error
+52. Lock Screen
+53. OTP
+54. Salary Settings
+55. Components
+56. Search
+57. Knowledgebase
+58. FAQ
+59. Employee Dashboard
+60. Performance Review
+61. Kanban Board
+62. File Manager
+63. Subscriptions
+64. Responsive
+
+========================================*/
+@font-face {
+  font-family: "CircularStd";
+  font-style: normal;
+  font-weight: 400;
+  src: local("Circular Std Book"),
+    url("../fonts/CircularStd-Book.woff") format("woff");
+}
+@font-face {
+  font-family: "CircularStd";
+  font-style: italic;
+  font-weight: 400;
+  src: local("Circular Std Book Italic"),
+    url("../fonts/CircularStd-BookItalic.woff") format("woff");
+}
+@font-face {
+  font-family: "CircularStd";
+  font-style: normal;
+  font-weight: 500;
+  src: local("Circular Std Medium"),
+    url("../fonts/CircularStd-Medium.woff") format("woff");
+}
+@font-face {
+  font-family: "CircularStd";
+  font-style: italic;
+  font-weight: 500;
+  src: local("Circular Std Medium Italic"),
+    url("../fonts/CircularStd-MediumItalic.woff") format("woff");
+}
+@font-face {
+  font-family: "CircularStd";
+  font-style: normal;
+  font-weight: 600;
+  src: local("Circular Std Bold"),
+    url("../fonts/CircularStd-Bold.woff") format("woff");
+}
+@font-face {
+  font-family: "CircularStd";
+  font-style: italic;
+  font-weight: 600;
+  src: local("Circular Std Bold Italic"),
+    url("../fonts/CircularStd-BoldItalic.woff") format("woff");
+}
+@font-face {
+  font-family: "CircularStd";
+  font-style: normal;
+  font-weight: 800;
+  src: local("Circular Std Black"),
+    url("../fonts/CircularStd-Black.woff") format("woff");
+}
+@font-face {
+  font-family: "CircularStd";
+  font-style: italic;
+  font-weight: 800;
+  src: local("Circular Std Black Italic"),
+    url("../fonts/CircularStd-BlackItalic.woff") format("woff");
+}
+
+/*-----------------
+	1. General
+-----------------------*/
+
+html {
+  height: 100%;
+}
+body {
+  font-family: "CircularStd", sans-serif;
+  font-size: 0.9375rem;
+  color: #1f1f1f;
+  background-color: #f7f7f7;
+  min-height: 100%;
+  overflow-x: hidden;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: CircularStd;
+  margin-top: 0;
+  font-weight: 500;
+}
+h1,
+.h1 {
+  font-size: 2.25rem;
+}
+h2,
+.h2 {
+  font-size: 1.875rem;
+}
+h3,
+.h3 {
+  font-size: 1.5rem;
+}
+h4,
+.h4 {
+  font-size: 1.125rem;
+}
+h5,
+.h5 {
+  font-size: 0.875rem;
+}
+h6,
+.h6 {
+  font-size: 0.75rem;
+}
+a,
+a:hover,
+a:active,
+a:focus {
+  text-decoration: none;
+  outline: none;
+}
+.form-control {
+  border-color: #e3e3e3;
+  box-shadow: none;
+  font-size: 15px;
+  height: 44px;
+}
+.form-control:focus {
+  border-color: #ccc;
+  box-shadow: none;
+  outline: 0 none;
+}
+.form-control[disabled],
+fieldset[disabled] .form-control {
+  cursor: not-allowed;
+}
+input,
+button,
+a {
+  transition: all 0.4s ease;
+  -moz-transition: all 0.4s ease;
+  -o-transition: all 0.4s ease;
+  -ms-transition: all 0.4s ease;
+  -webkit-transition: all 0.4s ease;
+}
+input,
+input:focus,
+button,
+button:focus {
+  outline: none;
+}
+input[type="file"] {
+  height: auto;
+}
+input[type="text"],
+input[type="password"] {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+textarea.form-control {
+  resize: vertical;
+  height: auto;
+}
+.navbar-nav > li {
+  float: left;
+}
+.form-control-lg.form-control {
+  border-radius: 4px;
+  height: 46px;
+}
+.form-control-sm.form-control {
+  height: 30px;
+  border-radius: 0;
+}
+.input-group.input-group-lg .form-control {
+  height: 46px;
+}
+.material-icons {
+  font-family: "Material Icons";
+  font-weight: normal;
+  font-style: normal;
+  font-size: 24px;
+  display: inline-block;
+  line-height: 1;
+  text-transform: none;
+  letter-spacing: normal;
+  word-wrap: normal;
+  white-space: nowrap;
+  direction: ltr;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+  -moz-osx-font-smoothing: grayscale;
+  font-feature-settings: "liga";
+}
+.input-group-text {
+  background-color: #f7f7f7;
+  border-color: #e3e3e3;
+}
+select.form-control[multiple] option,
+select.form-control[size] option {
+  border-radius: 3px;
+  padding: 7px 12px;
+}
+select.form-control[multiple],
+select.form-control[size] {
+  height: 200px;
+  padding: 7px;
+}
+.form-group {
+  margin-bottom: 1rem;
+}
+.table > :not(:first-child) {
+  border: 0;
+}
+
+.header{
+  padding: 20px 0;
+  text-align: center;
+}
