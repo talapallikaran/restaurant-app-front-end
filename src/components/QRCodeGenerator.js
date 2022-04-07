@@ -1,5 +1,5 @@
 import QRCode from "qrcode.react";
-export default function QrCode() {
+export default function QRCodeGenerator() {
   const information = [
     {
       Name: "joy Resutrent",
