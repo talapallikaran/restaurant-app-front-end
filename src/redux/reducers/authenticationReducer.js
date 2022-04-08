@@ -1,7 +1,8 @@
-import { userAction } from "../constants/actionsConstants";
+import { userAction, otpVerification } from "../constants/actionsConstants";
 
 const initialState = {
   user: [],
+  otp: [],
   apiLoading: false,
   apiGetDataSuccess: false,
   apiGetDataFail: false,
@@ -25,6 +26,28 @@ const userReducer = (state = initialState, action) => {
       return {
         ...state,
         user: action.payload.user,
+        apiLoading: action.payload.apiLoading,
+        apiGetDataSuccess: action.payload.apiGetDataSuccess,
+        apiGetDataFail: action.payload.apiGetDataFail,
+      };
+    }
+
+    case otpVerification.FETCH_OTP: {
+      return { ...state, apiLoading: true };
+    }
+    case otpVerification.FETCH_OTP_SUCCESS: {
+      return {
+        ...state,
+        otp: action.payload.otp,
+        apiLoading: action.payload.apiLoading,
+        apiGetDataSuccess: action.payload.apiGetDataSuccess,
+        apiGetDataFail: action.payload.apiGetDataFail,
+      };
+    }
+    case otpVerification.FETCH_OTP_FAILURE: {
+      return {
+        ...state,
+        otp: action.payload.otp,
         apiLoading: action.payload.apiLoading,
         apiGetDataSuccess: action.payload.apiGetDataSuccess,
         apiGetDataFail: action.payload.apiGetDataFail,

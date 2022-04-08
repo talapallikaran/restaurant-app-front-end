@@ -2,14 +2,23 @@ import React, { useState } from "react";
 import CustomButton from "../../../components/CustomButton";
 import InputField from "../../../components/InputField/InputField";
 
-function OtpStep() {
+function OtpStep(props) {
+  const { otpAction } = props;
   const [isOTP, setIsOTP] = useState("");
   const [message, setMessage] = useState("");
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    if (isOTP.length !== 4) {
+    if (isNaN(isOTP) === true) {
       setMessage("Enter Valid OTP");
+    } else if (isOTP.length !== 4) {
+      setMessage("Enter Valid OTP2");
+    } else if (isOTP.length === 4) {
+      const parameter = {
+        phone: localStorage.getItem("phone"),
+        otp: isOTP,
+      };
+      otpAction(parameter);
     }
   };
 
@@ -31,13 +40,15 @@ function OtpStep() {
           <div className="row verification-page2">
             <div className="col-lg-5 col-md-5 col-sm-12">
               <InputField
-                type="number"
+                type="text"
                 id="btn"
                 placeholder="Enter OTP"
-                maxLength="4"
                 value={isOTP}
+                maxLength="4"
                 onChange={(e) => {
-                  setIsOTP(e.target.value);
+                  let text = e.target.value;
+                  text = text.replace(/[^0-9]/g, "");
+                  setIsOTP(text);
                 }}
               />
               <p className="errorMessage">{message}</p>
