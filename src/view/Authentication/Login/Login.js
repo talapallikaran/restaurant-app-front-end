@@ -23,7 +23,7 @@ function Login() {
         if (
           phoneUtil.format(phoneUtil.parse(`+91${mobile}`), PNF.INTERNATIONAL)
         )
-          navigate("/otpstep");
+          navigate("/OtpStep");
       } else {
         setMessage("Enter valid number");
       }
