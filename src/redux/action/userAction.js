@@ -7,3 +7,10 @@ export const getUsers = (value) => {
     payload: value,
   };
 };
+
+export const postOTP = (value) => {
+  return {
+    type: actions.otpVerification.FETCH_OTP,
+    payload: value,
+  };
+};
