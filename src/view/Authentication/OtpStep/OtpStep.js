@@ -28,7 +28,7 @@ function OtpStep(props) {
         <div className="container">
           <div className="row">
             <div className="col-12 icon-page2">
-              <a href="">
+              <a>
                 <i className="fa-solid fa-mobile-screen"></i>
               </a>
               <h2>verification</h2>

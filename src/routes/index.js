@@ -1,20 +1,25 @@
 import React from "react";
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import Home from "../view/Home/Home";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Login from "../view/Authentication/Login";
 import OtpStep from "../view/Authentication/OtpStep";
-
-/*Component file imports*/
+import QrCodeGenerator from "../view/QrCode/QrCodeGenerator";
+import QrCodeScanner from "../view/QrCode/QrCodeScanner";
 
 function Routers(props) {
   const { history } = props;
   return (
-    <Router location={history} navigator={history}>
+    <BrowserRouter
+      basename="/restaurant"
+      location={history}
+      navigator={history}
+    >
       <Routes>
-        <Route exact path={"/"} element={<Login />} />
-        <Route exact path={"/otpstep"} element={<OtpStep />} />
+      <Route exact path={"/"} element={<Login />} />
+      <Route exact path={"/OtpStep"} element={<OtpStep />} />
+      <Route exact path={"/QrCodeGenerator"} element={<QrCodeGenerator />} />
+      <Route exact path={"/QrCodeScanner"} element={<QrCodeScanner />} />
       </Routes>
-    </Router>
+    </BrowserRouter>
   );
 }
 

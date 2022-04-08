@@ -7,6 +7,7 @@ import Routes from "./routes/index";
 import history from "./utils/history";
 import store from "./store/index";
 
+
 function App() {
   return (
     <Provider store={store}>
