@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 import QRScan from 'qrscan'
 
-class Test extends Component {
+class QrCodeScanner extends Component {
   
   constructor (props) {
     super(props)
@@ -34,4 +34,4 @@ class Test extends Component {
 }
 
 
-export default Test;
+export default QrCodeScanner;
