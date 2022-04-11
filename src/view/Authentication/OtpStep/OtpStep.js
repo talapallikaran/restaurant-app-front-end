@@ -1,15 +1,20 @@
 import React, { useState } from "react";
 import CustomButton from "../../../components/CustomButton";
 import InputField from "../../../components/InputField/InputField";
+import { useNavigate } from "react-router-dom";
 
 function OtpStep() {
   const [isOTP, setIsOTP] = useState("");
   const [message, setMessage] = useState("");
 
+  const navigate = useNavigate();
+
   const handleSubmit = (e) => {
     e.preventDefault();
     if (isOTP.length !== 4) {
       setMessage("Enter Valid OTP");
+    } else {
+      navigate("/MenuLandingPage");
     }
   };
 
