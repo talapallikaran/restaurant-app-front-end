@@ -4,6 +4,8 @@ import Login from "../view/Authentication/Login";
 import OtpStep from "../view/Authentication/OtpStep";
 import QrCodeGenerator from "../view/QrCode/QrCodeGenerator";
 import QrCodeScanner from "../view/QrCode/QrCodeScanner";
+import CheckOut from "../view/CheckOut";
+import ThankYou from "../components/ThankYou";
 
 function Routers(props) {
   const { history } = props;
@@ -18,6 +20,9 @@ function Routers(props) {
       <Route exact path={"/OtpStep"} element={<OtpStep />} />
       <Route exact path={"/QrCodeGenerator"} element={<QrCodeGenerator />} />
       <Route exact path={"/QrCodeScanner"} element={<QrCodeScanner />} />
+      <Route exact path={"/CheckOut"} element={<CheckOut />} />
+      <Route exact path={"/ThankYou"} element={<ThankYou />} />
+
       </Routes>
     </BrowserRouter>
   );
