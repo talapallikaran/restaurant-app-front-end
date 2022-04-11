@@ -1,13 +1,17 @@
 import OtpStep from "./OtpStep";
 import { connect } from "react-redux";
-import { postOTP } from "../../../redux/action/userAction";
+import { sendMobileVerificationOTP } from "../../../redux/action/userAction";
 
-const mapStateToProps = (state) => ({});
+const mapStateToProps = (state) => {
+  return {
+    otp: state.auth.otp,
+  };
+};
 
 const mapDispatchToProps = (dispatch) => {
   return {
     otpAction: (parameter) => {
-      dispatch(postOTP(parameter));
+      dispatch(sendMobileVerificationOTP(parameter));
     },
   };
 };

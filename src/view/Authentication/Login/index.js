@@ -1,13 +1,17 @@
 import Login from "./Login";
 import { connect } from "react-redux";
-import { getUsers } from "../../../redux/action/userAction";
+import { sendMobileNumber } from "../../../redux/action/userAction";
 
-const mapStateToProps = (state) => ({});
+const mapStateToProps = (state) => {
+  return {
+    mobile: state.auth.mobile,
+  };
+};
 
 const mapDispatchToProps = (dispatch) => {
   return {
     userAction: (parameter) => {
-      dispatch(getUsers(parameter));
+      dispatch(sendMobileNumber(parameter));
     },
   };
 };

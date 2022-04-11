@@ -1,50 +1,63 @@
-import { userAction, otpVerification } from "../constants/actionsConstants";
+import {
+  mobileAction,
+  otpVerificationAction,
+} from "../constants/actionsConstants";
 
-const initialState = {
-  user: [],
+const mobile = {
+  mobile: [],
+  apiLoading: false,
+  apiGetDataSuccess: false,
+  apiGetDataFail: false,
+};
+const otp = {
   otp: [],
   apiLoading: false,
   apiGetDataSuccess: false,
   apiGetDataFail: false,
 };
 
-const userReducer = (state = initialState, action) => {
+const initialState = {
+  ...mobile,
+  ...otp,
+};
+
+const mobileReducer = (state = initialState, action) => {
   switch (action.type) {
-    case userAction.FETCH_USER: {
+    case mobileAction.POST_NUMBER: {
       return { ...state, apiLoading: true };
     }
-    case userAction.FETCH_USER_SUCCESS: {
+    case mobileAction.POST_NUMBER_SUCCESS: {
       return {
         ...state,
-        user: action.payload.user,
+        mobile: action.payload,
         apiLoading: action.payload.apiLoading,
         apiGetDataSuccess: action.payload.apiGetDataSuccess,
         apiGetDataFail: action.payload.apiGetDataFail,
       };
     }
-    case userAction.FETCH_USER_FAILURE: {
+    case mobileAction.POST_NUMBER_FAILED: {
       return {
         ...state,
-        user: action.payload.user,
+        mobile: action.payload,
         apiLoading: action.payload.apiLoading,
         apiGetDataSuccess: action.payload.apiGetDataSuccess,
         apiGetDataFail: action.payload.apiGetDataFail,
       };
     }
 
-    case otpVerification.FETCH_OTP: {
+    case otpVerificationAction.POST_OTP: {
       return { ...state, apiLoading: true };
     }
-    case otpVerification.FETCH_OTP_SUCCESS: {
+    case otpVerificationAction.POST_OTP_SUCCESS: {
       return {
         ...state,
-        otp: action.payload.otp,
+        otp: action.payload,
         apiLoading: action.payload.apiLoading,
         apiGetDataSuccess: action.payload.apiGetDataSuccess,
         apiGetDataFail: action.payload.apiGetDataFail,
       };
     }
-    case otpVerification.FETCH_OTP_FAILURE: {
+    case otpVerificationAction.POST_OTP_FAILED: {
       return {
         ...state,
         otp: action.payload.otp,
@@ -58,4 +71,4 @@ const userReducer = (state = initialState, action) => {
   }
 };
 
-export default userReducer;
+export default mobileReducer;

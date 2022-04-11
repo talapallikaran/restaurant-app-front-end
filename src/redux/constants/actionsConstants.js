@@ -1,13 +1,13 @@
-export const userAction = {
-  FETCH_USER: "user/FETCH_USER",
-  FETCH_USER_SUCCESS: "user/FETCH_USER_SUCCESS",
-  FETCH_USER_FAILURE: "user/FETCH_USER_FAILURE",
+export const mobileAction = {
+  POST_NUMBER: "mobile/POST_NUMBER",
+  POST_NUMBER_SUCCESS: "mobile/POST_NUMBER_SUCCESS",
+  POST_NUMBER_FAILED: "mobile/POST_NUMBER_FAILED",
 };
 
-export const otpVerification = {
-  FETCH_OTP: "otp/FETCH_OTP",
-  FETCH_OTP_SUCCESS: "otp/FETCH_OTP_SUCCESS",
-  FETCH_OTP_FAILURE: "otp/FETCH_OTP_FAILURE",
+export const otpVerificationAction = {
+  POST_OTP: "otp/POST_OTP",
+  POST_OTP_SUCCESS: "otp/POST_OTP_SUCCESS",
+  POST_OTP_FAILED: "otp/POST_OTP_FAILED",
 };
 
 export const appAction = {
