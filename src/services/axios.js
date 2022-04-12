@@ -2,7 +2,7 @@ import axios from "axios";
 
 //create axios for server call and headers
 const instance = axios.create({
-  baseURL: "https://jsonplaceholder.typicode.com",
+  baseURL: "http://localhost:8080",
 });
 
 // Interceptor for GET

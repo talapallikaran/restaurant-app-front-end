@@ -241,6 +241,23 @@ body{
   padding-top: 10px;
 }
 
+.otpMsg{
+  position: absolute;
+  width: 100%;
+  top: 0;
+  background-color: #5b47b7;;
+  padding: 15px 20px;
+  border-radius: 0 0 20px 20px;
+}
+
+.otpMsg h1{
+  font-size: 14px;
+  color: #fff;
+  font-weight: 400;
+}
+.otpMsg .otp{
+  font-weight: 600;
+}
 .verification-page2{
   display: flex;
   align-items: center;
@@ -812,3 +829,40 @@ a:hover:after{
 
 /* ---------------------------media query for landing page end---------------------------- */
 /* ----------------------------restraurant landing page end-------------------------- */
+
+
+/* ----------------------------Thank You page-------------------------- */
+.thankyoucontent{
+  background-color: #373839;
+  height: 100vh;
+  width: 100%;
+  text-align: center;
+  margin:auto;
+}
+
+.wrapper-1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+.wrapper-2 h1 {
+  color: white;
+  font-family: 'Courier New', Courier, monospace;
+  font-weight:700;
+  font-size: 30px;
+}
+.go-home {
+  background: #e83890;
+  border:none;
+  padding: 15px 50px;
+  margin: 30px 0;
+  border-radius: 5px;
+  cursor: pointer;
+  color: #f4f4f4;
+  border-radius: 10px;
+  text-transform: uppercase;
+}
+
+/* ----------------------------Thank You page-------------------------- */
+

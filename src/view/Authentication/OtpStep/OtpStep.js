@@ -1,25 +1,48 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
+import { useNavigate } from "react-router";
+
 import CustomButton from "../../../components/CustomButton";
 import InputField from "../../../components/InputField/InputField";
 import { useNavigate } from "react-router-dom";
 
-function OtpStep() {
+function OtpStep(props) {
+  const { otpAction, mobile, otp } = props;
+
+  const navigate = useNavigate();
+
   const [isOTP, setIsOTP] = useState("");
   const [message, setMessage] = useState("");
+  useEffect(() => {
+    if (otp && otp.status === "success") {
+      console.log("Login succssful");
+      navigate("/");
+    } else if (otp && otp.status === "failed") {
+      console.log("Enter Valid Otp");
+    }
+  }, [otp]);
 
   const navigate = useNavigate();
 
   const handleSubmit = (e) => {
-    e.preventDefault();
     if (isOTP.length !== 4) {
-      setMessage("Enter Valid OTP");
-    } else {
-      navigate("/MenuLandingPage");
+      setMessage("Enter Valid ");
+    } else if (isOTP.length === 4) {
+      const parameter = {
+        phone: localStorage.getItem("phone"),
+        otp: isOTP,
+      };
+      localStorage.removeItem("phone");
+      otpAction(parameter);
     }
   };
 
   return (
     <div className="wrapper">
+      <div className="otpMsg">
+        <h1>
+          Your OTP : <span className="otp">{mobile && mobile.otp}</span>
+        </h1>
+      </div>
       <div className="wrapper-mobile">
         <div className="container">
           <div className="row">
@@ -36,13 +59,15 @@ function OtpStep() {
           <div className="row verification-page2">
             <div className="col-lg-5 col-md-5 col-sm-12">
               <InputField
-                type="number"
+                type="text"
                 id="btn"
                 placeholder="Enter OTP"
-                maxLength="4"
                 value={isOTP}
+                maxLength="4"
                 onChange={(e) => {
-                  setIsOTP(e.target.value);
+                  let text = e.target.value;
+                  text = text.replace(/[^0-9]/g, "");
+                  setIsOTP(text);
                 }}
               />
               <p className="errorMessage">{message}</p>

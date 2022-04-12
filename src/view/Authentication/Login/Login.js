@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import InputField from "../../../components/InputField/InputField";
 import CustomButton from "../../../components/CustomButton/CustomButton";
 import { useNavigate } from "react-router-dom";
@@ -7,14 +7,14 @@ import {
   PhoneNumberFormat as PNF,
 } from "google-libphonenumber";
 
-function Login() {
-  const [mobile, setMobile] = useState({});
+function Login(props) {
+  const { userAction } = props;
+  const [mobile, setMobile] = useState("");
   const [message, setMessage] = useState("");
 
   const navigate = useNavigate();
 
   const handleSubmit = (e) => {
-    e.preventDefault();
     if (mobile.length !== 10) {
       setMessage("Enter 10 Digit Number");
     } else if (mobile.length === 10) {
@@ -22,8 +22,14 @@ function Login() {
       if (phoneUtil.isValidNumber(phoneUtil.parse(`+91${mobile}`)) === true) {
         if (
           phoneUtil.format(phoneUtil.parse(`+91${mobile}`), PNF.INTERNATIONAL)
-        )
-          navigate("/OtpStep");
+        ) {
+          const parameter = {
+            phone: mobile,
+          };
+          userAction(parameter);
+          localStorage.setItem("phone", `${mobile}`);
+          navigate("/otpstep");
+        }
       } else {
         setMessage("Enter valid number");
       }
@@ -31,6 +37,7 @@ function Login() {
       setMessage("Enter valid number");
     }
   };
+
   return (
     <div className="wrapper">
       <div className="wrapper-mobile">
@@ -50,13 +57,16 @@ function Login() {
           <div className="row verification">
             <div className="col-lg-5 col-md-5 col-sm-12">
               <InputField
-                type="number"
+                type="text"
                 id="phone"
                 name="mobile"
                 placeholder="Enter Mobile"
+                maxLength="10"
                 value={mobile}
                 onChange={(e) => {
-                  setMobile(e.target.value);
+                  let text = e.target.value;
+                  text = text.replace(/[^0-9]/g, "");
+                  setMobile(text);
                 }}
               />
               <br />

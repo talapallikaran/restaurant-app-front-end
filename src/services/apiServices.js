@@ -32,7 +32,7 @@ export async function fetchUser(parameters) {
   // Parameters may look like below
   // parameters = 10
   try {
-    const response = await instance.post(``, parameters, {});
+    const response = await instance.post(`/users`, parameters);
     return response;
   } catch (error) {
     return false;
@@ -40,6 +40,14 @@ export async function fetchUser(parameters) {
   // return axios.post(`/users/add`);
 }
 
+export async function fetchOTP(parameters) {
+  try {
+    const response = await instance.post(`/otp`, parameters);
+    return response;
+  } catch (error) {
+    return false;
+  }
+}
 // Updating data using API
 export async function updateUserData(parameters) {
   // Parameters may look like below
