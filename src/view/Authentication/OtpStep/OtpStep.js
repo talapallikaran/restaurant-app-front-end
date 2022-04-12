@@ -3,6 +3,7 @@ import { useNavigate } from "react-router";
 
 import CustomButton from "../../../components/CustomButton";
 import InputField from "../../../components/InputField/InputField";
+import { useNavigate } from "react-router-dom";
 
 function OtpStep(props) {
   const { otpAction, mobile, otp } = props;
@@ -19,6 +20,8 @@ function OtpStep(props) {
       console.log("Enter Valid Otp");
     }
   }, [otp]);
+
+  const navigate = useNavigate();
 
   const handleSubmit = (e) => {
     if (isOTP.length !== 4) {

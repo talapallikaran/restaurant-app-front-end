@@ -22,7 +22,6 @@ function Routers(props) {
       <Route exact path={"/QrCodeScanner"} element={<QrCodeScanner />} />
       <Route exact path={"/CheckOut"} element={<CheckOut />} />
       <Route exact path={"/ThankYou"} element={<ThankYou />} />
-
       </Routes>
     </BrowserRouter>
   );
