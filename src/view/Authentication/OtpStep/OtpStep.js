@@ -1,29 +1,45 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
+import { useNavigate } from "react-router";
+
 import CustomButton from "../../../components/CustomButton";
 import InputField from "../../../components/InputField/InputField";
 
 function OtpStep(props) {
-  const { otpAction } = props;
+  const { otpAction, mobile, otp } = props;
+
+  const navigate = useNavigate();
+
   const [isOTP, setIsOTP] = useState("");
   const [message, setMessage] = useState("");
+  useEffect(() => {
+    if (otp && otp.status === "success") {
+      console.log("Login succssful");
+      navigate("/");
+    } else if (otp && otp.status === "failed") {
+      console.log("Enter Valid Otp");
+    }
+  }, [otp]);
 
   const handleSubmit = (e) => {
-    e.preventDefault();
-    if (isNaN(isOTP) === true) {
-      setMessage("Enter Valid OTP");
-    } else if (isOTP.length !== 4) {
-      setMessage("Enter Valid OTP2");
+    if (isOTP.length !== 4) {
+      setMessage("Enter Valid ");
     } else if (isOTP.length === 4) {
       const parameter = {
         phone: localStorage.getItem("phone"),
         otp: isOTP,
       };
+      localStorage.removeItem("phone");
       otpAction(parameter);
     }
   };
 
   return (
     <div className="wrapper">
+      <div className="otpMsg">
+        <h1>
+          Your OTP : <span className="otp">{mobile && mobile.otp}</span>
+        </h1>
+      </div>
       <div className="wrapper-mobile">
         <div className="container">
           <div className="row">
