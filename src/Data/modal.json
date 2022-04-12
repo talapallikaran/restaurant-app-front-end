@@ -1,0 +1,1149 @@
+{   
+    "restaurants": [
+        {
+        "id": 1,
+        "name": "Mission Chinese Food",
+        "country": "India",
+        "image": "",
+        "address": "171 E Broadway, Bombay NY 10002",
+        "location": {
+            "lat": 40.743394,
+            "lng": -73.954235
+        },
+        "type" : "South Indian",
+        "operating_hours": {
+            "Monday": "5:00 pm - 12:00 am",
+            "Tuesday": "5:00 pm - 12:00 am",
+            "Wednesday": "5:00 pm - 12:00 am",
+            "Thursday": "5:00 pm - 12:00 am",
+            "Friday": "5:00 pm - 12:00 am",
+            "Saturday": "11:00 am - 12:00 am",
+            "Sunday": "11:00 am - 12:00 am"
+        },
+        "menu" :[
+        {
+            "id": "1",
+            "image": "",
+            "name": "Pasta",
+            "price": "10.25",
+            "description": "Lorem, Ipsum,Lorem, Ipsum,Lorem, Ipsum,",
+            "type": "starter"
+        }, {
+            "id": "2",
+            "image": "",
+            "name": "Hot and Sour Soup ",
+            "price": "$9.95",
+            "description": "Lorem, Ipsum,Lorem, Ipsum,Lorem, Ipsum,",
+            "type": "salad"
+        }, {
+            "id": "3",
+            "image": "",
+            "name": "Chinese Vegetables with Bean Curd Soup Quart ",
+            "price": "$9.95",
+            "description": "Lorem, Ipsum,Lorem, Ipsum,Lorem, Ipsum,",
+            "type": "specialty"
+        }, {
+            "id": "4",
+            "image": "",
+            "name": "Plain Fried Rice ",
+            "price": "$9.95",
+            "description": "Lorem, Ipsum,Lorem, Ipsum,Lorem, Ipsum,",
+            "type": "salad"
+        }, {
+            "id": "5",
+            "image": "",
+            "name": "Veg Biryani",
+            "price": "$9.95",
+            "description": "Lorem, Ipsum,Lorem, Ipsum,Lorem, Ipsum,",
+            "type": "specialty"
+        }
+    ]
+    },{
+        "id": 2,
+        "name": "Mr.Dosa",
+        "country": "India",
+        "image": "",
+        "address": "sanskar mandal, Bapunagar, ahmedabad",
+        "location": {
+            "lat": 40.745698,
+            "lng": -73.253698
+        },
+        "type" : "South Indian",
+        "operating_hours": {
+            "Monday": "5:00 pm - 12:00 am",
+            "Tuesday": "5:00 pm - 12:00 am",
+            "Wednesday": "5:00 pm - 12:00 am",
+            "Thursday": "5:00 pm - 12:00 am",
+            "Friday": "5:00 pm - 12:00 am",
+            "Saturday": "11:00 am - 12:00 am",
+            "Sunday": "11:00 am - 12:00 am"
+        },
+        "menu" :[
+        {
+            "id": "1",
+            "image": "",
+            "name": "Pasta",
+            "price": "10.25",
+            "description": "Lorem, Ipsum,Lorem, Ipsum,Lorem, Ipsum,",
+            "type": "starter"
+        }, {
+            "id": "2",
+            "image": "",
+            "name": "Hot and Sour Soup ",
+            "price": "$9.95",
+            "description": "Lorem, Ipsum,Lorem, Ipsum,Lorem, Ipsum,",
+            "type": "salad"
+        }, {
+            "id": "3",
+            "image": "",
+            "name": "Chinese Vegetables with Bean Curd Soup Quart ",
+            "price": "$9.95",
+            "description": "Lorem, Ipsum,Lorem, Ipsum,Lorem, Ipsum,",
+            "type": "specialty"
+        }, {
+            "id": "4",
+            "image": "",
+            "name": "Plain Fried Rice ",
+            "price": "$9.95",
+            "description": "Lorem, Ipsum,Lorem, Ipsum,Lorem, Ipsum,",
+            "type": "salad"
+        }, {
+            "id": "5",
+            "image": "",
+            "name": "Veg Biryani",
+            "price": "$9.95",
+            "description": "Lorem, Ipsum,Lorem, Ipsum,Lorem, Ipsum,",
+            "type": "salad"
+        }
+    ]},{
+        "id": 3,
+        "name": "Maska Chaska",
+        "country": "India",
+        "image": "",
+        "address": "sanskar mandal, Bhavnagar",
+        "location": {
+            "lat": 40.743325,
+            "lng": -73.954569
+        },
+        "type" : "Chiness",
+        "operating_hours": {
+            "Monday": "5:00 pm - 12:00 am",
+            "Tuesday": "5:00 pm - 12:00 am",
+            "Wednesday": "5:00 pm - 12:00 am",
+            "Thursday": "5:00 pm - 12:00 am",
+            "Friday": "5:00 pm - 12:00 am",
+            "Saturday": "11:00 am - 12:00 am",
+            "Sunday": "11:00 am - 12:00 am"
+        },
+        "menu" :[
+        {
+            "id": "1",
+            "image": "",
+            "name": "Pasta",
+            "price": "10.25",
+            "description": "Lorem, Ipsum,Lorem, Ipsum,Lorem, Ipsum,",
+            "type": "starter"
+        }, {
+            "id": "2",
+            "image": "",
+            "name": "Hot and Sour Soup ",
+            "price": "$9.95",
+            "description": "Lorem, Ipsum,Lorem, Ipsum,Lorem, Ipsum,",
+            "type": "salad"
+        }, {
+            "id": "3",
+            "image": "",
+            "name": "Chinese Vegetables with Bean Curd Soup Quart ",
+            "price": "$9.95",
+            "description": "Lorem, Ipsum,Lorem, Ipsum,Lorem, Ipsum,",
+            "type": "specialty"
+        }, {
+            "id": "4",
+            "image": "",
+            "name": "Plain Fried Rice ",
+            "price": "$9.95",
+            "description": "Lorem, Ipsum,Lorem, Ipsum,Lorem, Ipsum,",
+            "type": "salad"
+        }, {
+            "id": "5",
+            "image": "",
+            "name": "Veg Biryani",
+            "price": "$9.95",
+            "description": "Lorem, Ipsum,Lorem, Ipsum,Lorem, Ipsum,",
+            "type": "salad"
+        }
+    ]},{
+        "id": 4,
+        "name": "Super Pav Bhaji",
+        "country": "India",
+        "image": "",
+        "address": "1h/18, Nit, Faridabad, Faridabad",
+        "location": {
+            "lat": 38.743325,
+            "lng": -72.954569
+        },
+        "type" : "Pav Bhaji",
+        "operating_hours": {
+            "Monday": "5:00 pm - 12:00 am",
+            "Tuesday": "5:00 pm - 12:00 am",
+            "Wednesday": "5:00 pm - 12:00 am",
+            "Thursday": "5:00 pm - 12:00 am",
+            "Friday": "5:00 pm - 12:00 am",
+            "Saturday": "11:00 am - 12:00 am",
+            "Sunday": "11:00 am - 12:00 am"
+        },
+        "menu" :[
+        {
+            "id": "1",
+            "image": "",
+            "name": "Pasta",
+            "price": "10.25",
+            "description": "Lorem, Ipsum,Lorem, Ipsum,Lorem, Ipsum,",
+            "type": "starter"
+        }, {
+            "id": "2",
+            "image": "",
+            "name": "Hot and Sour Soup ",
+            "price": "$9.95",
+            "description": "Lorem, Ipsum,Lorem, Ipsum,Lorem, Ipsum,",
+            "type": "salad"
+        }, {
+            "id": "3",
+            "image": "",
+            "name": "Chinese Vegetables with Bean Curd Soup Quart ",
+            "price": "$9.95",
+            "description": "Lorem, Ipsum,Lorem, Ipsum,Lorem, Ipsum,",
+            "type": "specialty"
+        }, {
+            "id": "4",
+            "image": "",
+            "name": "Plain Fried Rice ",
+            "price": "$9.95",
+            "description": "Lorem, Ipsum,Lorem, Ipsum,Lorem, Ipsum,",
+            "type": "salad"
+        }, {
+            "id": "5",
+            "image": "",
+            "name": "Veg Biryani",
+            "price": "$9.95",
+            "description": "Lorem, Ipsum,Lorem, Ipsum,Lorem, Ipsum,",
+            "type": "salad"
+        }
+    ]},{
+        "id": 5,
+        "name": "Indian Fast Food",
+        "country": "India",
+        "image": "",
+        "address": "2block, Basweshwarngr,blr-79, Basveshwarnagar,Bangalore",
+        "location": {
+            "lat": 45.743394,
+            "lng": -63.954235
+        },
+        "type" : "Fast Food",
+        "operating_hours": {
+            "Monday": "5:00 pm - 12:00 am",
+            "Tuesday": "5:00 pm - 12:00 am",
+            "Wednesday": "5:00 pm - 12:00 am",
+            "Thursday": "5:00 pm - 12:00 am",
+            "Friday": "5:00 pm - 12:00 am",
+            "Saturday": "11:00 am - 12:00 am",
+            "Sunday": "11:00 am - 12:00 am"
+        },
+        "menu" :[
+        {
+            "id": "1",
+            "image": "",
+            "name": "Pasta",
+            "price": "10.25",
+            "description": "Lorem, Ipsum,Lorem, Ipsum,Lorem, Ipsum,",
+            "type": "starter"
+        }, {
+            "id": "2",
+            "image": "",
+            "name": "Hot and Sour Soup ",
+            "price": "$9.95",
+            "description": "Lorem, Ipsum,Lorem, Ipsum,Lorem, Ipsum,",
+            "type": "salad"
+        }, {
+            "id": "3",
+            "image": "",
+            "name": "Chinese Vegetables with Bean Curd Soup Quart ",
+            "price": "$9.95",
+            "description": "Lorem, Ipsum,Lorem, Ipsum,Lorem, Ipsum,",
+            "type": "specialty"
+        }, {
+            "id": "4",
+            "image": "",
+            "name": "Plain Fried Rice ",
+            "price": "$9.95",
+            "description": "Lorem, Ipsum,Lorem, Ipsum,Lorem, Ipsum,",
+            "type": "salad"
+        }, {
+            "id": "5",
+            "image": "",
+            "name": "Veg Biryani",
+            "price": "$9.95",
+            "description": "Lorem, Ipsum,Lorem, Ipsum,Lorem, Ipsum,",
+            "type": "specialty"
+        }
+    ]
+    },{
+        "id": 6,
+        "name": "Sarthak Vadapav",
+        "country": "India",
+        "image": "",
+        "address": "sanskar mandal, Vastral, ahmedabad",
+        "location": {
+            "lat": 40.745698,
+            "lng": -58.253698
+        },
+        "type" : "Fast Food",
+        "operating_hours": {
+            "Monday": "5:00 pm - 12:00 am",
+            "Tuesday": "5:00 pm - 12:00 am",
+            "Wednesday": "5:00 pm - 12:00 am",
+            "Thursday": "5:00 pm - 12:00 am",
+            "Friday": "5:00 pm - 12:00 am",
+            "Saturday": "11:00 am - 12:00 am",
+            "Sunday": "11:00 am - 12:00 am"
+        },
+        "menu" :[
+        {
+            "id": "1",
+            "image": "",
+            "name": "Pasta",
+            "price": "10.25",
+            "description": "Lorem, Ipsum,Lorem, Ipsum,Lorem, Ipsum,",
+            "type": "starter"
+        }, {
+            "id": "2",
+            "image": "",
+            "name": "Hot and Sour Soup ",
+            "price": "$9.95",
+            "description": "Lorem, Ipsum,Lorem, Ipsum,Lorem, Ipsum,",
+            "type": "salad"
+        }, {
+            "id": "3",
+            "image": "",
+            "name": "Chinese Vegetables with Bean Curd Soup Quart ",
+            "price": "$9.95",
+            "description": "Lorem, Ipsum,Lorem, Ipsum,Lorem, Ipsum,",
+            "type": "specialty"
+        }, {
+            "id": "4",
+            "image": "",
+            "name": "Plain Fried Rice ",
+            "price": "$9.95",
+            "description": "Lorem, Ipsum,Lorem, Ipsum,Lorem, Ipsum,",
+            "type": "salad"
+        }, {
+            "id": "5",
+            "image": "",
+            "name": "Veg Biryani",
+            "price": "$9.95",
+            "description": "Lorem, Ipsum,Lorem, Ipsum,Lorem, Ipsum,",
+            "type": "salad"
+        }
+    ]},{
+        "id": 7,
+        "name": "TAJ India",
+        "country": "India",
+        "image": "",
+        "address": " 86, Botawala Building, August Kranti Marg, August Kranti Marg, Mumbai",
+        "location": {
+            "lat": 48.743325,
+            "lng": -93.954569
+        },
+        "type" : "Chiness, South Indian, Gujarati Food et.",
+        "operating_hours": {
+            "Monday": "5:00 pm - 12:00 am",
+            "Tuesday": "5:00 pm - 12:00 am",
+            "Wednesday": "5:00 pm - 12:00 am",
+            "Thursday": "5:00 pm - 12:00 am",
+            "Friday": "5:00 pm - 12:00 am",
+            "Saturday": "11:00 am - 12:00 am",
+            "Sunday": "11:00 am - 12:00 am"
+        },
+        "menu" :[
+        {
+            "id": "1",
+            "image": "",
+            "name": "Pasta",
+            "price": "10.25",
+            "description": "Lorem, Ipsum,Lorem, Ipsum,Lorem, Ipsum,",
+            "type": "starter"
+        }, {
+            "id": "2",
+            "image": "",
+            "name": "Hot and Sour Soup ",
+            "price": "$9.95",
+            "description": "Lorem, Ipsum,Lorem, Ipsum,Lorem, Ipsum,",
+            "type": "salad"
+        }, {
+            "id": "3",
+            "image": "",
+            "name": "Chinese Vegetables with Bean Curd Soup Quart ",
+            "price": "$9.95",
+            "description": "Lorem, Ipsum,Lorem, Ipsum,Lorem, Ipsum,",
+            "type": "specialty"
+        }, {
+            "id": "4",
+            "image": "",
+            "name": "Plain Fried Rice ",
+            "price": "$9.95",
+            "description": "Lorem, Ipsum,Lorem, Ipsum,Lorem, Ipsum,",
+            "type": "salad"
+        }, {
+            "id": "5",
+            "image": "",
+            "name": "Veg Biryani",
+            "price": "$9.95",
+            "description": "Lorem, Ipsum,Lorem, Ipsum,Lorem, Ipsum,",
+            "type": "salad"
+        }
+    ]},{
+        "id": 8,
+        "name": "La Pinoz Pizza",
+        "country": "India",
+        "image": "",
+        "address": "Shrinivas Villa S No 3, Erandawana, Flat No 9,   Pune",
+        "location": {
+            "lat": 38.743325,
+            "lng": -72.954569
+        },
+        "type" : "Pizza",
+        "operating_hours": {
+            "Monday": "5:00 pm - 12:00 am",
+            "Tuesday": "5:00 pm - 12:00 am",
+            "Wednesday": "5:00 pm - 12:00 am",
+            "Thursday": "5:00 pm - 12:00 am",
+            "Friday": "5:00 pm - 12:00 am",
+            "Saturday": "11:00 am - 12:00 am",
+            "Sunday": "11:00 am - 12:00 am"
+        },
+        "menu" :[
+        {
+            "id": "1",
+            "image": "",
+            "name": "Pasta",
+            "price": "10.25",
+            "description": "Lorem, Ipsum,Lorem, Ipsum,Lorem, Ipsum,",
+            "type": "starter"
+        }, {
+            "id": "2",
+            "image": "",
+            "name": "Hot and Sour Soup ",
+            "price": "$9.95",
+            "description": "Lorem, Ipsum,Lorem, Ipsum,Lorem, Ipsum,",
+            "type": "salad"
+        }, {
+            "id": "3",
+            "image": "",
+            "name": "Chinese Vegetables with Bean Curd Soup Quart ",
+            "price": "$9.95",
+            "description": "Lorem, Ipsum,Lorem, Ipsum,Lorem, Ipsum,",
+            "type": "specialty"
+        }, {
+            "id": "4",
+            "image": "",
+            "name": "Plain Fried Rice ",
+            "price": "$9.95",
+            "description": "Lorem, Ipsum,Lorem, Ipsum,Lorem, Ipsum,",
+            "type": "salad"
+        }, {
+            "id": "5",
+            "image": "",
+            "name": "Veg Biryani",
+            "price": "$9.95",
+            "description": "Lorem, Ipsum,Lorem, Ipsum,Lorem, Ipsum,",
+            "type": "salad"
+        }
+    ]},{
+        "id": 9,
+        "name": "Dominoz Pizza",
+        "country": "India",
+        "image": "",
+        "address": "Shrinivas Villa S No 4, Erandawana, Flat No 5,   Pune",
+        "location": {
+            "lat": 38.743322,
+            "lng": -72.954556
+        },
+        "type" : "Pizza",
+        "operating_hours": {
+            "Monday": "5:00 pm - 12:00 am",
+            "Tuesday": "5:00 pm - 12:00 am",
+            "Wednesday": "5:00 pm - 12:00 am",
+            "Thursday": "5:00 pm - 12:00 am",
+            "Friday": "5:00 pm - 12:00 am",
+            "Saturday": "11:00 am - 12:00 am",
+            "Sunday": "11:00 am - 12:00 am"
+        },
+        "menu" :[
+        {
+            "id": "1",
+            "image": "",
+            "name": "Pasta",
+            "price": "10.25",
+            "description": "Lorem, Ipsum,Lorem, Ipsum,Lorem, Ipsum,",
+            "type": "starter"
+        }, {
+            "id": "2",
+            "image": "",
+            "name": "Hot and Sour Soup ",
+            "price": "$9.95",
+            "description": "Lorem, Ipsum,Lorem, Ipsum,Lorem, Ipsum,",
+            "type": "salad"
+        }, {
+            "id": "3",
+            "image": "",
+            "name": "Chinese Vegetables with Bean Curd Soup Quart ",
+            "price": "$9.95",
+            "description": "Lorem, Ipsum,Lorem, Ipsum,Lorem, Ipsum,",
+            "type": "specialty"
+        }, {
+            "id": "4",
+            "image": "",
+            "name": "Plain Fried Rice ",
+            "price": "$9.95",
+            "description": "Lorem, Ipsum,Lorem, Ipsum,Lorem, Ipsum,",
+            "type": "salad"
+        }, {
+            "id": "5",
+            "image": "",
+            "name": "Veg Biryani",
+            "price": "$9.95",
+            "description": "Lorem, Ipsum,Lorem, Ipsum,Lorem, Ipsum,",
+            "type": "salad"
+        }
+    ]},{
+        "id": 10,
+        "name": "US Pizza",
+        "country": "India",
+        "image": "",
+        "address": "Shrinivas Villa S No 8, Erandawana, Flat No 10,   Pune",
+        "location": {
+            "lat": 38.743325,
+            "lng": -72.954569
+        },
+        "type" : "Pizza",
+        "operating_hours": {
+            "Monday": "5:00 pm - 12:00 am",
+            "Tuesday": "5:00 pm - 12:00 am",
+            "Wednesday": "5:00 pm - 12:00 am",
+            "Thursday": "5:00 pm - 12:00 am",
+            "Friday": "5:00 pm - 12:00 am",
+            "Saturday": "11:00 am - 12:00 am",
+            "Sunday": "11:00 am - 12:00 am"
+        },
+        "menu" :[
+        {
+            "id": "1",
+            "image": "",
+            "name": "Pasta",
+            "price": "10.25",
+            "description": "Lorem, Ipsum,Lorem, Ipsum,Lorem, Ipsum,",
+            "type": "starter"
+        }, {
+            "id": "2",
+            "image": "",
+            "name": "Hot and Sour Soup ",
+            "price": "$9.95",
+            "description": "Lorem, Ipsum,Lorem, Ipsum,Lorem, Ipsum,",
+            "type": "salad"
+        }, {
+            "id": "3",
+            "image": "",
+            "name": "Chinese Vegetables with Bean Curd Soup Quart ",
+            "price": "$9.95",
+            "description": "Lorem, Ipsum,Lorem, Ipsum,Lorem, Ipsum,",
+            "type": "specialty"
+        }, {
+            "id": "4",
+            "image": "",
+            "name": "Plain Fried Rice ",
+            "price": "$9.95",
+            "description": "Lorem, Ipsum,Lorem, Ipsum,Lorem, Ipsum,",
+            "type": "salad"
+        }, {
+            "id": "5",
+            "image": "",
+            "name": "Veg Biryani",
+            "price": "$9.95",
+            "description": "Lorem, Ipsum,Lorem, Ipsum,Lorem, Ipsum,",
+            "type": "salad"
+        }
+    ]},{
+        "id": 11,
+        "name": "Modi Chinese Food",
+        "country": "India",
+        "image": "",
+        "address": "Marve Road, Nr Police Chowki,nr Malwani Church, Malad (west),Mumbai",
+        "location": {
+            "lat": 25.743394,
+            "lng": -73.954235
+        },
+        "type" : "Chiness",
+        "operating_hours": {
+            "Monday": "5:00 pm - 12:00 am",
+            "Tuesday": "5:00 pm - 12:00 am",
+            "Wednesday": "5:00 pm - 12:00 am",
+            "Thursday": "5:00 pm - 12:00 am",
+            "Friday": "5:00 pm - 12:00 am",
+            "Saturday": "11:00 am - 12:00 am",
+            "Sunday": "11:00 am - 12:00 am"
+        },
+        "menu" :[
+        {
+            "id": "1",
+            "image": "",
+            "name": "Pasta",
+            "price": "10.25",
+            "description": "Lorem, Ipsum,Lorem, Ipsum,Lorem, Ipsum,",
+            "type": "starter"
+        }, {
+            "id": "2",
+            "image": "",
+            "name": "Hot and Sour Soup ",
+            "price": "$9.95",
+            "description": "Lorem, Ipsum,Lorem, Ipsum,Lorem, Ipsum,",
+            "type": "salad"
+        }, {
+            "id": "3",
+            "image": "",
+            "name": "Chinese Vegetables with Bean Curd Soup Quart ",
+            "price": "$9.95",
+            "description": "Lorem, Ipsum,Lorem, Ipsum,Lorem, Ipsum,",
+            "type": "specialty"
+        }, {
+            "id": "4",
+            "image": "",
+            "name": "Plain Fried Rice ",
+            "price": "$9.95",
+            "description": "Lorem, Ipsum,Lorem, Ipsum,Lorem, Ipsum,",
+            "type": "salad"
+        }, {
+            "id": "5",
+            "image": "",
+            "name": "Veg Biryani",
+            "price": "$9.95",
+            "description": "Lorem, Ipsum,Lorem, Ipsum,Lorem, Ipsum,",
+            "type": "specialty"
+        }
+    ]
+    },{
+        "id": 12,
+        "name": "Mrs.Dosa",
+        "country": "India",
+        "image": "",
+        "address": "new sanskar mandal, Bapunagar, ahmedabad",
+        "location": {
+            "lat": 89.745698,
+            "lng": -73.253698
+        },
+        "type" : "South Indian",
+        "operating_hours": {
+            "Monday": "5:00 pm - 12:00 am",
+            "Tuesday": "5:00 pm - 12:00 am",
+            "Wednesday": "5:00 pm - 12:00 am",
+            "Thursday": "5:00 pm - 12:00 am",
+            "Friday": "5:00 pm - 12:00 am",
+            "Saturday": "11:00 am - 12:00 am",
+            "Sunday": "11:00 am - 12:00 am"
+        },
+        "menu" :[
+        {
+            "id": "1",
+            "image": "",
+            "name": "Pasta",
+            "price": "10.25",
+            "description": "Lorem, Ipsum,Lorem, Ipsum,Lorem, Ipsum,",
+            "type": "starter"
+        }, {
+            "id": "2",
+            "image": "",
+            "name": "Hot and Sour Soup ",
+            "price": "$9.95",
+            "description": "Lorem, Ipsum,Lorem, Ipsum,Lorem, Ipsum,",
+            "type": "salad"
+        }, {
+            "id": "3",
+            "image": "",
+            "name": "Chinese Vegetables with Bean Curd Soup Quart ",
+            "price": "$9.95",
+            "description": "Lorem, Ipsum,Lorem, Ipsum,Lorem, Ipsum,",
+            "type": "specialty"
+        }, {
+            "id": "4",
+            "image": "",
+            "name": "Plain Fried Rice ",
+            "price": "$9.95",
+            "description": "Lorem, Ipsum,Lorem, Ipsum,Lorem, Ipsum,",
+            "type": "salad"
+        }, {
+            "id": "5",
+            "image": "",
+            "name": "Veg Biryani",
+            "price": "$9.95",
+            "description": "Lorem, Ipsum,Lorem, Ipsum,Lorem, Ipsum,",
+            "type": "salad"
+        }
+    ]},{
+        "id": 13,
+        "name": "Jalaram Thali",
+        "country": "India",
+        "image": "",
+        "address": "Bapunagar, Ahemdabad",
+        "location": {
+            "lat": 40.743325,
+            "lng": -73.954569
+        },
+        "type" : "Gujrati",
+        "operating_hours": {
+            "Monday": "5:00 pm - 12:00 am",
+            "Tuesday": "5:00 pm - 12:00 am",
+            "Wednesday": "5:00 pm - 12:00 am",
+            "Thursday": "5:00 pm - 12:00 am",
+            "Friday": "5:00 pm - 12:00 am",
+            "Saturday": "11:00 am - 12:00 am",
+            "Sunday": "11:00 am - 12:00 am"
+        },
+        "menu" :[
+        {
+            "id": "1",
+            "image": "",
+            "name": "Pasta",
+            "price": "10.25",
+            "description": "Lorem, Ipsum,Lorem, Ipsum,Lorem, Ipsum,",
+            "type": "starter"
+        }, {
+            "id": "2",
+            "image": "",
+            "name": "Hot and Sour Soup ",
+            "price": "$9.95",
+            "description": "Lorem, Ipsum,Lorem, Ipsum,Lorem, Ipsum,",
+            "type": "salad"
+        }, {
+            "id": "3",
+            "image": "",
+            "name": "Chinese Vegetables with Bean Curd Soup Quart ",
+            "price": "$9.95",
+            "description": "Lorem, Ipsum,Lorem, Ipsum,Lorem, Ipsum,",
+            "type": "specialty"
+        }, {
+            "id": "4",
+            "image": "",
+            "name": "Plain Fried Rice ",
+            "price": "$9.95",
+            "description": "Lorem, Ipsum,Lorem, Ipsum,Lorem, Ipsum,",
+            "type": "salad"
+        }, {
+            "id": "5",
+            "image": "",
+            "name": "Veg Biryani",
+            "price": "$9.95",
+            "description": "Lorem, Ipsum,Lorem, Ipsum,Lorem, Ipsum,",
+            "type": "salad"
+        }
+    ]},{
+        "id": 14,
+        "name": "IMS Pav Bhaji",
+        "country": "India",
+        "image": "",
+        "address": "Shop No 2, Kala Killa, Sion Bandra Link, Mumbai",
+        "location": {
+            "lat": 38.743325,
+            "lng": -72.954569
+        },
+        "type" : "Pav Bhaji",
+        "operating_hours": {
+            "Monday": "5:00 pm - 12:00 am",
+            "Tuesday": "5:00 pm - 12:00 am",
+            "Wednesday": "5:00 pm - 12:00 am",
+            "Thursday": "5:00 pm - 12:00 am",
+            "Friday": "5:00 pm - 12:00 am",
+            "Saturday": "11:00 am - 12:00 am",
+            "Sunday": "11:00 am - 12:00 am"
+        },
+        "menu" :[
+        {
+            "id": "1",
+            "image": "",
+            "name": "Pasta",
+            "price": "10.25",
+            "description": "Lorem, Ipsum,Lorem, Ipsum,Lorem, Ipsum,",
+            "type": "starter"
+        }, {
+            "id": "2",
+            "image": "",
+            "name": "Hot and Sour Soup ",
+            "price": "$9.95",
+            "description": "Lorem, Ipsum,Lorem, Ipsum,Lorem, Ipsum,",
+            "type": "salad"
+        }, {
+            "id": "3",
+            "image": "",
+            "name": "Chinese Vegetables with Bean Curd Soup Quart ",
+            "price": "$9.95",
+            "description": "Lorem, Ipsum,Lorem, Ipsum,Lorem, Ipsum,",
+            "type": "specialty"
+        }, {
+            "id": "4",
+            "image": "",
+            "name": "Plain Fried Rice ",
+            "price": "$9.95",
+            "description": "Lorem, Ipsum,Lorem, Ipsum,Lorem, Ipsum,",
+            "type": "salad"
+        }, {
+            "id": "5",
+            "image": "",
+            "name": "Veg Biryani",
+            "price": "$9.95",
+            "description": "Lorem, Ipsum,Lorem, Ipsum,Lorem, Ipsum,",
+            "type": "salad"
+        }
+    ]},{
+        "id": 15,
+        "name": "Karnavati Fast Food",
+        "country": "India",
+        "image": "",
+        "address": "88-89, Sadar Bazar, Nr Esi Hospital,Bangalore",
+        "location": {
+            "lat": 45.743394,
+            "lng": -63.954235
+        },
+        "type" : "Fast Food",
+        "operating_hours": {
+            "Monday": "5:00 pm - 12:00 am",
+            "Tuesday": "5:00 pm - 12:00 am",
+            "Wednesday": "5:00 pm - 12:00 am",
+            "Thursday": "5:00 pm - 12:00 am",
+            "Friday": "5:00 pm - 12:00 am",
+            "Saturday": "11:00 am - 12:00 am",
+            "Sunday": "11:00 am - 12:00 am"
+        },
+        "menu" :[
+        {
+            "id": "1",
+            "image": "",
+            "name": "Pasta",
+            "price": "10.25",
+            "description": "Lorem, Ipsum,Lorem, Ipsum,Lorem, Ipsum,",
+            "type": "starter"
+        }, {
+            "id": "2",
+            "image": "",
+            "name": "Hot and Sour Soup ",
+            "price": "$9.95",
+            "description": "Lorem, Ipsum,Lorem, Ipsum,Lorem, Ipsum,",
+            "type": "salad"
+        }, {
+            "id": "3",
+            "image": "",
+            "name": "Chinese Vegetables with Bean Curd Soup Quart ",
+            "price": "$9.95",
+            "description": "Lorem, Ipsum,Lorem, Ipsum,Lorem, Ipsum,",
+            "type": "specialty"
+        }, {
+            "id": "4",
+            "image": "",
+            "name": "Plain Fried Rice ",
+            "price": "$9.95",
+            "description": "Lorem, Ipsum,Lorem, Ipsum,Lorem, Ipsum,",
+            "type": "salad"
+        }, {
+            "id": "5",
+            "image": "",
+            "name": "Veg Biryani",
+            "price": "$9.95",
+            "description": "Lorem, Ipsum,Lorem, Ipsum,Lorem, Ipsum,",
+            "type": "specialty"
+        }
+    ]
+    },{
+        "id": 16,
+        "name": "Chetna Vadapav",
+        "country": "India",
+        "image": "",
+        "address": " Po Box 8717, B Wing 303, Shalaka, Telly Gally X Lane, Andheri (e), mumbai",
+        "location": {
+            "lat": 40.745698,
+            "lng": -58.253698
+        },
+        "type" : "Fast Food",
+        "operating_hours": {
+            "Monday": "5:00 pm - 12:00 am",
+            "Tuesday": "5:00 pm - 12:00 am",
+            "Wednesday": "5:00 pm - 12:00 am",
+            "Thursday": "5:00 pm - 12:00 am",
+            "Friday": "5:00 pm - 12:00 am",
+            "Saturday": "11:00 am - 12:00 am",
+            "Sunday": "11:00 am - 12:00 am"
+        },
+        "menu" :[
+        {
+            "id": "1",
+            "image": "",
+            "name": "Pasta",
+            "price": "10.25",
+            "description": "Lorem, Ipsum,Lorem, Ipsum,Lorem, Ipsum,",
+            "type": "starter"
+        }, {
+            "id": "2",
+            "image": "",
+            "name": "Hot and Sour Soup ",
+            "price": "$9.95",
+            "description": "Lorem, Ipsum,Lorem, Ipsum,Lorem, Ipsum,",
+            "type": "salad"
+        }, {
+            "id": "3",
+            "image": "",
+            "name": "Chinese Vegetables with Bean Curd Soup Quart ",
+            "price": "$9.95",
+            "description": "Lorem, Ipsum,Lorem, Ipsum,Lorem, Ipsum,",
+            "type": "specialty"
+        }, {
+            "id": "4",
+            "image": "",
+            "name": "Plain Fried Rice ",
+            "price": "$9.95",
+            "description": "Lorem, Ipsum,Lorem, Ipsum,Lorem, Ipsum,",
+            "type": "salad"
+        }, {
+            "id": "5",
+            "image": "",
+            "name": "Veg Biryani",
+            "price": "$9.95",
+            "description": "Lorem, Ipsum,Lorem, Ipsum,Lorem, Ipsum,",
+            "type": "salad"
+        }
+    ]},{
+        "id": 17,
+        "name": "Sankalp India",
+        "country": "India",
+        "image": "",
+        "address": " 1-8-613(27/3rt), Road No.5, Prakasham Nagar, Begumpet, Mumbai",
+        "location": {
+            "lat": 48.743325,
+            "lng": -93.954569
+        },
+        "type" : "Chiness, South Indian, Gujarati Food et.",
+        "operating_hours": {
+            "Monday": "5:00 pm - 12:00 am",
+            "Tuesday": "5:00 pm - 12:00 am",
+            "Wednesday": "5:00 pm - 12:00 am",
+            "Thursday": "5:00 pm - 12:00 am",
+            "Friday": "5:00 pm - 12:00 am",
+            "Saturday": "11:00 am - 12:00 am",
+            "Sunday": "11:00 am - 12:00 am"
+        },
+        "menu" :[
+        {
+            "id": "1",
+            "image": "",
+            "name": "Pasta",
+            "price": "10.25",
+            "description": "Lorem, Ipsum,Lorem, Ipsum,Lorem, Ipsum,",
+            "type": "starter"
+        }, {
+            "id": "2",
+            "image": "",
+            "name": "Hot and Sour Soup ",
+            "price": "$9.95",
+            "description": "Lorem, Ipsum,Lorem, Ipsum,Lorem, Ipsum,",
+            "type": "salad"
+        }, {
+            "id": "3",
+            "image": "",
+            "name": "Chinese Vegetables with Bean Curd Soup Quart ",
+            "price": "$9.95",
+            "description": "Lorem, Ipsum,Lorem, Ipsum,Lorem, Ipsum,",
+            "type": "specialty"
+        }, {
+            "id": "4",
+            "image": "",
+            "name": "Plain Fried Rice ",
+            "price": "$9.95",
+            "description": "Lorem, Ipsum,Lorem, Ipsum,Lorem, Ipsum,",
+            "type": "salad"
+        }, {
+            "id": "5",
+            "image": "",
+            "name": "Veg Biryani",
+            "price": "$9.95",
+            "description": "Lorem, Ipsum,Lorem, Ipsum,Lorem, Ipsum,",
+            "type": "salad"
+        }
+    ]},{
+        "id": 18,
+        "name": "99 Pizza",
+        "country": "India",
+        "image": "",
+        "address": "3, Nr Sai Baba Hospital, Sai Shradha Bldg, B P Rd, Bhayander (east),   Pune",
+        "location": {
+            "lat": 38.743325,
+            "lng": -72.954569
+        },
+        "type" : "Pizza",
+        "operating_hours": {
+            "Monday": "5:00 pm - 12:00 am",
+            "Tuesday": "5:00 pm - 12:00 am",
+            "Wednesday": "5:00 pm - 12:00 am",
+            "Thursday": "5:00 pm - 12:00 am",
+            "Friday": "5:00 pm - 12:00 am",
+            "Saturday": "11:00 am - 12:00 am",
+            "Sunday": "11:00 am - 12:00 am"
+        },
+        "menu" :[
+        {
+            "id": "1",
+            "image": "",
+            "name": "Pasta",
+            "price": "10.25",
+            "description": "Lorem, Ipsum,Lorem, Ipsum,Lorem, Ipsum,",
+            "type": "starter"
+        }, {
+            "id": "2",
+            "image": "",
+            "name": "Hot and Sour Soup ",
+            "price": "$9.95",
+            "description": "Lorem, Ipsum,Lorem, Ipsum,Lorem, Ipsum,",
+            "type": "salad"
+        }, {
+            "id": "3",
+            "image": "",
+            "name": "Chinese Vegetables with Bean Curd Soup Quart ",
+            "price": "$9.95",
+            "description": "Lorem, Ipsum,Lorem, Ipsum,Lorem, Ipsum,",
+            "type": "specialty"
+        }, {
+            "id": "4",
+            "image": "",
+            "name": "Plain Fried Rice ",
+            "price": "$9.95",
+            "description": "Lorem, Ipsum,Lorem, Ipsum,Lorem, Ipsum,",
+            "type": "salad"
+        }, {
+            "id": "5",
+            "image": "",
+            "name": "Veg Biryani",
+            "price": "$9.95",
+            "description": "Lorem, Ipsum,Lorem, Ipsum,Lorem, Ipsum,",
+            "type": "salad"
+        }
+    ]},{
+        "id": 19,
+        "name": "Rock n rock Pizza",
+        "country": "India",
+        "image": "",
+        "address": " 4/10, Sathya Nagar, Ramapuram, sChennai",
+        "location": {
+            "lat": 38.743322,
+            "lng": -72.954556
+        },
+        "type" : "Pizza",
+        "operating_hours": {
+            "Monday": "5:00 pm - 12:00 am",
+            "Tuesday": "5:00 pm - 12:00 am",
+            "Wednesday": "5:00 pm - 12:00 am",
+            "Thursday": "5:00 pm - 12:00 am",
+            "Friday": "5:00 pm - 12:00 am",
+            "Saturday": "11:00 am - 12:00 am",
+            "Sunday": "11:00 am - 12:00 am"
+        },
+        "menu" :[
+        {
+            "id": "1",
+            "image": "",
+            "name": "Pasta",
+            "price": "10.25",
+            "description": "Lorem, Ipsum,Lorem, Ipsum,Lorem, Ipsum,",
+            "type": "starter"
+        }, {
+            "id": "2",
+            "image": "",
+            "name": "Hot and Sour Soup ",
+            "price": "$9.95",
+            "description": "Lorem, Ipsum,Lorem, Ipsum,Lorem, Ipsum,",
+            "type": "salad"
+        }, {
+            "id": "3",
+            "image": "",
+            "name": "Chinese Vegetables with Bean Curd Soup Quart ",
+            "price": "$9.95",
+            "description": "Lorem, Ipsum,Lorem, Ipsum,Lorem, Ipsum,",
+            "type": "specialty"
+        }, {
+            "id": "4",
+            "image": "",
+            "name": "Plain Fried Rice ",
+            "price": "$9.95",
+            "description": "Lorem, Ipsum,Lorem, Ipsum,Lorem, Ipsum,",
+            "type": "salad"
+        }, {
+            "id": "5",
+            "image": "",
+            "name": "Veg Biryani",
+            "price": "$9.95",
+            "description": "Lorem, Ipsum,Lorem, Ipsum,Lorem, Ipsum,",
+            "type": "salad"
+        }
+    ]},{
+        "id": 20,
+        "name": "Modi Sandwitch",
+        "country": "India",
+        "image": "",
+        "address": "4, Chandrakant Niwas, T P Road, Bhandup (west),sPune",
+        "location": {
+            "lat": 38.743325,
+            "lng": -72.954569
+        },
+        "type" : "Sandwitch",
+        "operating_hours": {
+            "Monday": "5:00 pm - 12:00 am",
+            "Tuesday": "5:00 pm - 12:00 am",
+            "Wednesday": "5:00 pm - 12:00 am",
+            "Thursday": "5:00 pm - 12:00 am",
+            "Friday": "5:00 pm - 12:00 am",
+            "Saturday": "11:00 am - 12:00 am",
+            "Sunday": "11:00 am - 12:00 am"
+        },
+        "menu" :[
+        {
+            "id": "1",
+            "image": "",
+            "name": "Pasta",
+            "price": "10.25",
+            "description": "Lorem, Ipsum,Lorem, Ipsum,Lorem, Ipsum,",
+            "type": "starter"
+        }, {
+            "id": "2",
+            "image": "",
+            "name": "Hot and Sour Soup ",
+            "price": "$9.95",
+            "description": "Lorem, Ipsum,Lorem, Ipsum,Lorem, Ipsum,",
+            "type": "salad"
+        }, {
+            "id": "3",
+            "image": "",
+            "name": "Chinese Vegetables with Bean Curd Soup Quart ",
+            "price": "$9.95",
+            "description": "Lorem, Ipsum,Lorem, Ipsum,Lorem, Ipsum,",
+            "type": "specialty"
+        }, {
+            "id": "4",
+            "image": "",
+            "name": "Plain Fried Rice ",
+            "price": "$9.95",
+            "description": "Lorem, Ipsum,Lorem, Ipsum,Lorem, Ipsum,",
+            "type": "salad"
+        }, {
+            "id": "5",
+            "image": "",
+            "name": "Veg Biryani",
+            "price": "$9.95",
+            "description": "Lorem, Ipsum,Lorem, Ipsum,Lorem, Ipsum,",
+            "type": "salad"
+        }
+    ]}  
+    ]
+}

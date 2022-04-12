@@ -531,6 +531,23 @@ body{
   padding-top: 10px;
 }
 
+.otpMsg{
+  position: absolute;
+  width: 100%;
+  top: 0;
+  background-color: #5b47b7;;
+  padding: 15px 20px;
+  border-radius: 0 0 20px 20px;
+}
+
+.otpMsg h1{
+  font-size: 14px;
+  color: #fff;
+  font-weight: 400;
+}
+.otpMsg .otp{
+  font-weight: 600;
+}
 .verification-page2{
   display: flex;
   align-items: center;

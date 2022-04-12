@@ -15,10 +15,7 @@ function Login(props) {
   const navigate = useNavigate();
 
   const handleSubmit = (e) => {
-    e.preventDefault();
-    if (isNaN(mobile) === true) {
-      setMessage("Enter Valid Number");
-    } else if (mobile.length !== 10) {
+    if (mobile.length !== 10) {
       setMessage("Enter 10 Digit Number");
     } else if (mobile.length === 10) {
       const phoneUtil = PhoneNumberUtil.getInstance();

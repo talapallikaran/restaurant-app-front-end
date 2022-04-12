@@ -60,7 +60,7 @@ const mobileReducer = (state = initialState, action) => {
     case otpVerificationAction.POST_OTP_FAILED: {
       return {
         ...state,
-        otp: action.payload.otp,
+        otp: action.payload,
         apiLoading: action.payload.apiLoading,
         apiGetDataSuccess: action.payload.apiGetDataSuccess,
         apiGetDataFail: action.payload.apiGetDataFail,

@@ -4,7 +4,8 @@ import { sendMobileVerificationOTP } from "../../../redux/action/userAction";
 
 const mapStateToProps = (state) => {
   return {
-    otp: state.auth.otp,
+    mobile: state.auth.mobile.mobile,
+    otp: state.auth.otp.otp,
   };
 };
 
