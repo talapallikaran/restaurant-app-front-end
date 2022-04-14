@@ -1,13 +1,10 @@
 import React, { useEffect, useState } from "react";
 import { useNavigate } from "react-router";
-
 import CustomButton from "../../../components/CustomButton";
 import InputField from "../../../components/InputField/InputField";
-import { useNavigate } from "react-router-dom";
 
 function OtpStep(props) {
   const { otpAction, mobile, otp } = props;
-
   const navigate = useNavigate();
 
   const [isOTP, setIsOTP] = useState("");
@@ -15,13 +12,12 @@ function OtpStep(props) {
   useEffect(() => {
     if (otp && otp.status === "success") {
       console.log("Login succssful");
-      navigate("/");
+      navigate("/MenuLandingPage");
     } else if (otp && otp.status === "failed") {
       console.log("Enter Valid Otp");
     }
   }, [otp]);
 
-  const navigate = useNavigate();
 
   const handleSubmit = (e) => {
     if (isOTP.length !== 4) {
