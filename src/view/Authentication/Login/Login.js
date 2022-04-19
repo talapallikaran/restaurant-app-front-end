@@ -49,7 +49,7 @@ function Login(props) {
               </a>
               <h2>verification</h2>
               <p>
-                we will you send a <strong>one time password</strong> on your
+                we will you send a <span className="bold">one time password</span> on your
                 mobile number
               </p>
             </div>
