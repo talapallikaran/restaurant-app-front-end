@@ -18,7 +18,6 @@ function OtpStep(props) {
     }
   }, [otp]);
 
-
   const handleSubmit = (e) => {
     if (isOTP.length !== 4) {
       setMessage("Enter Valid ");
@@ -48,7 +47,7 @@ function OtpStep(props) {
               </a>
               <h2>verification</h2>
               <p>
-                you will get a OTP via <strong>SMS</strong>
+                you will get a OTP via <span className="bold">SMS</span>
               </p>
             </div>
           </div>
