@@ -3,7 +3,6 @@ import { useNavigate } from "react-router";
 
 import CustomButton from "../../../components/CustomButton";
 import InputField from "../../../components/InputField/InputField";
-import { useNavigate } from "react-router-dom";
 
 function OtpStep(props) {
   const { otpAction, mobile, otp } = props;
@@ -21,7 +20,7 @@ function OtpStep(props) {
     }
   }, [otp]);
 
-  const navigate = useNavigate();
+
 
   const handleSubmit = (e) => {
     if (isOTP.length !== 4) {
@@ -52,7 +51,7 @@ function OtpStep(props) {
               </a>
               <h2>verification</h2>
               <p>
-                you will get a OTP via <strong>SMS</strong>
+                you will get a OTP via <span className="bold">SMS</span>
               </p>
             </div>
           </div>
