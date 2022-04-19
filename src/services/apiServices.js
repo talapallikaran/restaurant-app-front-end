@@ -35,7 +35,7 @@ export async function fetchUser(parameters) {
     const response = await instance.post(`/users`, parameters);
     return response;
   } catch (error) {
-    return false;
+    return error.response;
   }
   // return axios.post(`/users/add`);
 }
@@ -45,7 +45,7 @@ export async function fetchOTP(parameters) {
     const response = await instance.post(`/otp`, parameters);
     return response;
   } catch (error) {
-    return false;
+    return error.response;
   }
 }
 // Updating data using API

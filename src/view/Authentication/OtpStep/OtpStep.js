@@ -11,24 +11,30 @@ function OtpStep(props) {
   const [message, setMessage] = useState("");
   useEffect(() => {
     if (otp && otp.status === "success") {
-      console.log("Login succssful");
-      navigate("/MenuLandingPage");
+        localStorage.removeItem("phone");
+      setMessage("Login Successful");
+      // navigate("/")
     } else if (otp && otp.status === "failed") {
-      console.log("Enter Valid Otp");
+      setMessage("Invalid OTP");
     }
   }, [otp]);
 
   const handleSubmit = (e) => {
     if (isOTP.length !== 4) {
-      setMessage("Enter Valid ");
+      setMessage("Enter 4 Digit OTP");
     } else if (isOTP.length === 4) {
       const parameter = {
         phone: localStorage.getItem("phone"),
         otp: isOTP,
       };
-      localStorage.removeItem("phone");
       otpAction(parameter);
     }
+  };
+
+  const handleChange = (e) => {
+    let text = e.target.value;
+    text = text.replace(/[^0-9]/g, "");
+    setIsOTP(text);
   };
 
   return (
@@ -59,11 +65,7 @@ function OtpStep(props) {
                 placeholder="Enter OTP"
                 value={isOTP}
                 maxLength="4"
-                onChange={(e) => {
-                  let text = e.target.value;
-                  text = text.replace(/[^0-9]/g, "");
-                  setIsOTP(text);
-                }}
+                onChange={handleChange}
               />
               <p className="errorMessage">{message}</p>
             </div>
