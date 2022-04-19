@@ -5,7 +5,6 @@ import InputField from "../../../components/InputField/InputField";
 
 function OtpStep(props) {
   const { otpAction, mobile, otp } = props;
-
   const navigate = useNavigate();
 
   const [isOTP, setIsOTP] = useState("");
@@ -13,7 +12,7 @@ function OtpStep(props) {
   useEffect(() => {
     if (otp && otp.status === "success") {
       console.log("Login succssful");
-      navigate("/");
+      navigate("/MenuLandingPage");
     } else if (otp && otp.status === "failed") {
       console.log("Enter Valid Otp");
     }

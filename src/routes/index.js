@@ -6,6 +6,7 @@ import QrCodeGenerator from "../view/QrCode/QrCodeGenerator";
 import QrCodeScanner from "../view/QrCode/QrCodeScanner";
 import CheckOut from "../view/CheckOut";
 import ThankYou from "../components/ThankYou";
+import MenuLandingPage from "../view/Menu/MenuLandingPage";
 
 function Routers(props) {
   const { history } = props;
@@ -22,6 +23,7 @@ function Routers(props) {
       <Route exact path={"/QrCodeScanner"} element={<QrCodeScanner />} />
       <Route exact path={"/CheckOut"} element={<CheckOut />} />
       <Route exact path={"/ThankYou"} element={<ThankYou />} />
+      <Route exact path={"/MenuLandingPage"} element={<MenuLandingPage />} />
       </Routes>
     </BrowserRouter>
   );
