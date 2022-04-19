@@ -38,6 +38,12 @@ function Login(props) {
     }
   };
 
+  const handleChange = (e) => {
+    let text = e.target.value;
+    text = text.replace(/[^0-9]/g, "");
+    setMobile(text);
+  };
+
   return (
     <div className="wrapper">
       <div className="wrapper-mobile">
@@ -63,24 +69,18 @@ function Login(props) {
                 placeholder="Enter Mobile"
                 maxLength="10"
                 value={mobile}
-                onChange={(e) => {
-                  let text = e.target.value;
-                  text = text.replace(/[^0-9]/g, "");
-                  setMobile(text);
-                }}
+                onChange={handleChange}
               />
               <br />
               <p className="errorMessage">{message}</p>
             </div>
             <div className="col-lg-5 col-md-5 col-sm-12">
-              {/* <Link to={"/otpStep"}> */}
               <CustomButton
                 className="button"
                 name="get otp"
                 type="Submit"
                 onClick={handleSubmit}
               />
-              {/* </Link> */}
             </div>
           </div>
         </div>

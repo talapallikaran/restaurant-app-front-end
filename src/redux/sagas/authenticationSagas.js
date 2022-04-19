@@ -37,6 +37,7 @@ function* POST_MOBILE(action) {
       yield put({
         type: actions.mobileAction.POST_NUMBER_SUCCESS,
         payload: {
+          mobile: response.data,
           apiLoading: false,
           apiGetDataSuccess: false,
           apiGetDataFail: false,
@@ -46,6 +47,7 @@ function* POST_MOBILE(action) {
       yield put({
         type: actions.mobileAction.POST_NUMBER_SUCCESS,
         payload: {
+          mobile: response.data,
           apiLoading: false,
           apiGetDataSuccess: false,
           apiGetDataFail: true,
@@ -100,6 +102,7 @@ function* POST_OTP(action) {
       yield put({
         type: actions.otpVerificationAction.POST_OTP_SUCCESS,
         payload: {
+          otp: response.data,
           apiLoading: false,
           apiGetDataSuccess: false,
           apiGetDataFail: false,
@@ -109,6 +112,7 @@ function* POST_OTP(action) {
       yield put({
         type: actions.otpVerificationAction.POST_OTP_SUCCESS,
         payload: {
+          otp: response.data,
           apiLoading: false,
           apiGetDataSuccess: false,
           apiGetDataFail: true,
