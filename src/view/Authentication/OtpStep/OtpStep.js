@@ -1,6 +1,5 @@
 import React, { useEffect, useState } from "react";
 import { useNavigate } from "react-router";
-
 import CustomButton from "../../../components/CustomButton";
 import InputField from "../../../components/InputField/InputField";
 
@@ -19,8 +18,6 @@ function OtpStep(props) {
       console.log("Enter Valid Otp");
     }
   }, [otp]);
-
-
 
   const handleSubmit = (e) => {
     if (isOTP.length !== 4) {
