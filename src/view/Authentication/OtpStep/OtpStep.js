@@ -5,14 +5,13 @@ import InputField from "../../../components/InputField/InputField";
 
 function OtpStep(props) {
   const { otpAction, mobile, otp } = props;
-
   const navigate = useNavigate();
 
   const [isOTP, setIsOTP] = useState("");
   const [message, setMessage] = useState("");
   useEffect(() => {
     if (otp && otp.status === "success") {
-      localStorage.removeItem("phone");
+        localStorage.removeItem("phone");
       setMessage("Login Successful");
       // navigate("/")
     } else if (otp && otp.status === "failed") {
@@ -54,7 +53,7 @@ function OtpStep(props) {
               </a>
               <h2>verification</h2>
               <p>
-                you will get a OTP via <strong>SMS</strong>
+                you will get a OTP via <span className="bold">SMS</span>
               </p>
             </div>
           </div>

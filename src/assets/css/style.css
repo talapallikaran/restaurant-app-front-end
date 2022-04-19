@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 *{
   margin: 0;
   padding: 0;
@@ -6,12 +7,15 @@
 
 body{
   margin: 0;
-  font-family: "poppins",sans-serif;
+  font-family:'Roboto', sans-serif;
   font-size: 1rem;
-  font-weight: 500;
   line-height: 1.5;
   -webkit-text-size-adjust: 100%;
   -webkit-tap-highlight-color: rgba(0,0,0,0);
+}
+
+.bold{
+  font-weight: 800;
 }
 
 .container{
@@ -120,7 +124,7 @@ body{
   font-size: 35px;
   opacity: 0.7;
   text-transform: capitalize;
-  font-weight: lighter;
+  font-weight: 400;
   padding-top: 10px;
 }
 
@@ -242,7 +246,7 @@ body{
   font-size: 35px;
   opacity: 0.7;
   text-transform: capitalize;
-  font-weight: lighter;
+  font-weight: 400;
   padding-top: 10px;
 }
 
@@ -296,6 +300,10 @@ body{
  font-size: 16px;
  text-transform: uppercase;
  border: none;
+}
+
+.wrapper-mobile h2{
+  text-transform: capitalize;
 }
 
 .verification-page2 #btn{
@@ -836,10 +844,86 @@ a:hover:after{
 /* ----------------------------restraurant landing page end-------------------------- */
 
 
+
+/*--------------------------- Checkout page start from here------------------------------------ */
+
+
+
+.top-bar{
+  display: flex;
+  align-items: center;
+}
+
+.top-bar .fa-solid{
+  font-size: 24px;
+  color:#225cbc;
+  border-radius: 10px;
+  padding: 10px;
+  cursor: pointer;
+}
+
+.top-bar h2{
+  font-size: 24px;
+}
+
+.col-gap{
+  gap: 20px;
+  padding-bottom: 83px;
+  padding-top: 25px;
+
+}
+
+.pay{
+  height: 150px;
+  border-radius: 20px;
+  background-color: #f1f1f2;
+  border: 1px solid #fff;
+}
+
+.footer{
+  background-color: #225cbc;
+  color: white;
+}
+
+.rupees{
+  display: flex;
+  align-items: center;
+}
+
+.footer a{
+  color: white;
+  font-size: 28px;
+  margin-right: 8px;
+}
+
+.footer h2{
+  font-size: 28px;
+}
+
+.footer button{
+  width: 100px;
+  height: 40px;
+  border-radius: 10px;
+  background-color: #ffffff;
+  border: 1px solid #ffffff;
+  font-size: 14px;
+  color: #225cbc;
+  font-weight: 700;
+}
+
+.footer-content{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 10px;
+}
+
+/*--------------------------- Checkout page end here------------------------------------ */
+
 /* ----------------------------Thank You page-------------------------- */
 .thankyoucontent{
   background-color: #373839;
-  height: 100vh;
+  height: 1000px;
   width: 100%;
   text-align: center;
   margin:auto;
@@ -870,4 +954,249 @@ a:hover:after{
 }
 
 /* ----------------------------Thank You page-------------------------- */
+
+/* ----------------------------registration page start-------------------------- */
+
+.form-detail{
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  display: inline-block;
+  border: none;
+  background: #f1f1f1;
+}
+
+.form-detail:focus {
+  outline: none;
+  background-color: #ddd;
+}
+
+form h3{
+  text-transform: capitalize;
+  font-size: 16px;
+}
+
+.registerbtn {
+  background-color: #04AA6D;
+  color: white;
+  padding: 16px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  opacity: 0.9;
+  letter-spacing: 0.6px;
+  font-size: 16px;
+}
+
+.registerbtn:hover {
+  opacity: 1;
+}
+
+a {
+  color: dodgerblue;
+}
+
+.signin {
+  background-color: #f1f1f1;
+  text-align: center;
+}
+
+form h1{
+  text-align: center;
+}
+
+form p{
+  padding: 20px 0;
+  text-align: center;
+}
+
+/* ----------------------------registration page end-------------------------- */
+/* ----------------------------validation page start-------------------------- */
+.validation-data{
+  width: 100%;
+  height: 37px;
+  display: inline-block;
+  border: none;
+  font-size: 14px;
+  font-weight: 400;
+  font-family: "Roboto";
+  border-radius: 10px;
+  background-color: #ffffff;
+  text-indent: 15px;
+  font-style: oblique;
+}
+
+.validation-data:focus {
+  outline: none;
+  background-color: #ddd;
+}
+
+.registration-form{
+  background-color: #225cbc;
+  height:700px;
+}
+
+.valid-btn {
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  height: 37px;
+  opacity: 0.9;
+  border-radius: 10px;
+  background-color: #1a1a1a;
+  letter-spacing: 0.6px;
+  font-size: 28px;
+  color: #ffffff;
+  font-weight: 900;
+  font-family: "Roboto";
+  text-align: center;
+  font-size: 14px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.valid-btn:hover {
+  opacity: 1;
+}
+
+.logo{
+  border-radius: 0;
+  width: 100px;
+  height: 100px;
+  display: block;
+  margin: auto;
+}
+
+.restaurant-img{
+  padding-bottom: 100px;
+  padding-top: 124px;
+}
+
+.validation{
+  padding: 30px;  
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.validation-data{
+  padding: 0;
+}
+
+@media (min-width:767px){
+  .login-flex{
+    gap: 30px;
+  }
+  .login-data{
+    text-align: center;
+    border-radius: 10px;
+    border: none
+  }
+}
+
+@media (max-width:575px){
+  .login-page{
+    display: flex;
+    align-items: center;
+  }
+  .login-page{
+    padding-top: 0;
+    margin-top: -40px;
+  }
+}
+
+
+@media (min-width:991px){
+  
+  .logo{
+    height: 188px;
+    width: 188px;
+  }
+}
+
+
+/* ----------------------------validation page end-------------------------- */
+
+
+
+/* ----------------------------login page start-------------------------- */
+.login-page{
+  background-color: #225cbc;
+  height: 700px;
+  display: flex;
+  align-items: center;
+}
+
+.restaurant-inp{
+  padding-bottom: 120px;
+}
+
+.login-flex{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+  padding-bottom: 20px;
+}
+
+.login-data{
+  width: 100%;
+  height: 37px;
+  text-align: center;
+  border-radius: 10px;
+  border: none;
+  font-size: 14px;
+}
+
+@media (min-width:767px){
+  .login-flex{
+    gap: 30px;
+  }
+  .login-data{
+    text-align: center;
+    border-radius: 10px;
+    border: none
+  }
+}
+
+
+@media (max-width:575px){
+  .login-page{
+    display: flex;
+    align-items: center;
+  }
+  .login-page{
+    padding-top: 0;
+    margin-top: -40px;
+  }
+}
+
+@media (max-width:991px){
+  .login-data{
+    text-align: center;
+    border-radius: 10px;
+    border: none;
+  }
+}
+
+@media (min-width:991px){
+  .login-data{
+    font-size: 50px;
+    height: 50px;
+  }
+  .logo{
+    height: 188px;
+    width: 188px;
+  }
+  .login-btn .valid-btn{
+    height: 50px;
+  }
+  .restaurant-inp{
+    padding-top: 120px;
+  }
+}
+
+/* ----------------------------login page end-------------------------- */
 
