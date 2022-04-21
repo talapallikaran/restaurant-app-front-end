@@ -21,7 +21,7 @@ function OtpStep(props) {
     if (otp && otp.status === "success") {
       localStorage.removeItem("phone");
       setMessage("Login Successful");
-      // navigate("/")
+      navigate("/SearchRestarunt");
     } else if (otp && otp.status === "failed") {
       setMessage("Invalid OTP");
     }
@@ -65,7 +65,7 @@ function OtpStep(props) {
       }
     }
   };
-  console.log("otp", isOTP);
+
   const { otp1, otp2, otp3, otp4 } = isOTP;
   return (
     <div className="wrapper login-page">

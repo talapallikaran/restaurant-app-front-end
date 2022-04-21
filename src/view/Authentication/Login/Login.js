@@ -29,7 +29,7 @@ function Login(props) {
           };
           userAction(parameter);
           localStorage.setItem("phone", `${mobile}`);
-          navigate("/otpstep");
+          navigate("/OtpStep");
         }
       } else {
         setMessage("Enter valid number");
@@ -52,14 +52,6 @@ function Login(props) {
           <img src={logo} alt="does not open" className="logo" />
         </div>
         <div className="validation">
-          {/* <input
-            type="number"
-            placeholder="your mobile number"
-            name="mobile"
-            id="mobile"
-            required
-            className="validation-data"
-          /> */}
           <InputField
             type="text"
             id="mobile"
@@ -70,9 +62,6 @@ function Login(props) {
             onChange={handleChange}
             className="validation-data"
           />
-          {/* <button type="submit" class="valid-btn">
-            Send OTP
-          </button> */}
           <CustomButton
             className="valid-btn"
             name=" Send OTP"
