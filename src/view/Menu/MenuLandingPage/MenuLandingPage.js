@@ -7,10 +7,14 @@ import lobste from "../../../assets/menuListing/lobste.jpg";
 import lobsterRoll from "../../../assets/menuListing/lobsterRoll.jpg";
 import mozzarella from "../../../assets/menuListing/mozzarella.jpg";
 import tuscanGrilled from "../../../assets/menuListing/tuscanGrilled.jpg";
-import { useNavigate } from "react-router-dom";
+import { useNavigate,useParams } from "react-router-dom";
 
 
 const MenuLandingPage = () => {
+
+const { id } = useParams();
+
+
   const menuLandingPageData = [
     {
       id: 0,
