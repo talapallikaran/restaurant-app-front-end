@@ -77,3 +77,15 @@ export async function deleteUserData(parameters) {
   }
   // return axios.delete("/userdata/delete", parameters);
 }
+
+export async function fetchrestaurantData(parameters) {
+
+
+  try {
+    const response = await instance.get("/restaurant", {});
+    return response;
+  } catch (error) {
+    return false;
+  }
+
+}

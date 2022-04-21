@@ -13,3 +13,10 @@ export const otpVerificationAction = {
 export const appAction = {
   SHOW_ALERT: "app/SHOW_ALERT",
 };
+
+
+export const restaurantdata = {
+ GET_RESTAURANT_DATA_REQUESTED : "GET_RESTAURANT_DATA_REQUESTED",
+ GET_RESTAURANT_DATA_SUCCESS : "GET_RESTAURANT_DATA_SUCCESS",
+ GET_RESTAURANT_DATA_FAILED : "GET_RESTAURANT_DATA_FAILED",
+};
