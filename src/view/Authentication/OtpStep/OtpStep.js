@@ -2,16 +2,24 @@ import React, { useEffect, useState } from "react";
 import { useNavigate } from "react-router";
 import CustomButton from "../../../components/CustomButton";
 import InputField from "../../../components/InputField/InputField";
+import logo from "../../../assets/img/logo.png";
 
 function OtpStep(props) {
   const { otpAction, mobile, otp } = props;
+
+  const [isOTP, setIsOTP] = useState({
+    otp1: "",
+    otp2: "",
+    otp3: "",
+    otp4: "",
+  });
+  const [message, setMessage] = useState("");
+
   const navigate = useNavigate();
 
-  const [isOTP, setIsOTP] = useState("");
-  const [message, setMessage] = useState("");
   useEffect(() => {
     if (otp && otp.status === "success") {
-        localStorage.removeItem("phone");
+      localStorage.removeItem("phone");
       setMessage("Login Successful");
       // navigate("/")
     } else if (otp && otp.status === "failed") {
@@ -20,70 +28,117 @@ function OtpStep(props) {
   }, [otp]);
 
   const handleSubmit = (e) => {
-    if (isOTP.length !== 4) {
+    const value = Object.keys(isOTP)
+      .map((key) => `${isOTP[key]}`)
+      .join("");
+    if (value.length !== 4) {
       setMessage("Enter 4 Digit OTP");
-    } else if (isOTP.length === 4) {
+    } else if (value.length === 4) {
       const parameter = {
         phone: localStorage.getItem("phone"),
-        otp: isOTP,
+        otp: value,
       };
       otpAction(parameter);
     }
   };
 
   const handleChange = (e) => {
-    let text = e.target.value;
-    text = text.replace(/[^0-9]/g, "");
-    setIsOTP(text);
+    let value = e.target.value;
+    value = value.replace(/[^0-9]/g, "");
+    const name = e.target.name;
+    setIsOTP({
+      ...isOTP,
+      [name]: value,
+    });
   };
 
+  const inputfocus = (e) => {
+    if (e.key === "Delete" || e.key === "Backspace" || e.keyCode === 37) {
+      const next = e.target.tabIndex - 2;
+      if (next > -1) {
+        e.target.form.elements[next].focus();
+      }
+    } else {
+      const next = e.target.tabIndex;
+      if (next < 4) {
+        e.target.form.elements[next].focus();
+      }
+    }
+  };
+  console.log("otp", isOTP);
+  const { otp1, otp2, otp3, otp4 } = isOTP;
   return (
-    <div className="wrapper">
+    <div className="wrapper login-page">
       <div className="otpMsg">
         <h1>
           Your OTP : <span className="otp">{mobile && mobile.otp}</span>
         </h1>
       </div>
-      <div className="wrapper-mobile">
-        <div className="container">
-          <div className="row">
-            <div className="col-12 icon-page2">
-              <a>
-                <i className="fa-solid fa-mobile-screen"></i>
-              </a>
-              <h2>verification</h2>
-              <p>
-                you will get a OTP via <span className="bold">SMS</span>
-              </p>
-            </div>
+
+      <div className="container">
+        <div className="restaurant-inp">
+          <img src={logo} alt="does not open" className="logo" />
+        </div>
+        <form>
+          <div className="login-flex">
+            <InputField
+              type="text"
+              id="mobile"
+              name="otp1"
+              placeholder=""
+              className="login-data"
+              value={otp1}
+              maxLength="1"
+              tabIndex="1"
+              onChange={handleChange}
+              onkeyup={inputfocus}
+            />
+            <InputField
+              type="text"
+              id="mobile"
+              name="otp2"
+              placeholder=""
+              className="login-data"
+              value={otp2}
+              maxLength="1"
+              tabIndex="2"
+              onChange={handleChange}
+              onkeyup={inputfocus}
+            />
+            <InputField
+              type="text"
+              id="mobile"
+              name="otp3"
+              placeholder=""
+              className="login-data"
+              value={otp3}
+              maxLength="1"
+              tabIndex="3"
+              onChange={handleChange}
+              onkeyup={inputfocus}
+            />
+            <InputField
+              type="text"
+              id="mobile"
+              name="otp4"
+              placeholder=""
+              className="login-data"
+              value={otp4}
+              maxLength="1"
+              tabIndex="4"
+              onChange={handleChange}
+              onkeyup={inputfocus}
+            />
           </div>
-          <div className="row verification-page2">
-            <div className="col-lg-5 col-md-5 col-sm-12">
-              <InputField
-                type="text"
-                id="btn"
-                placeholder="Enter OTP"
-                value={isOTP}
-                maxLength="4"
-                onChange={handleChange}
-              />
-              <p className="errorMessage">{message}</p>
-            </div>
-            <div className="col-lg-5 col-md-5 col-sm-12">
-              <CustomButton
-                className="button"
-                name="verify"
-                type="Submit"
-                onClick={handleSubmit}
-              />
-            </div>
-            <p className="resend">
-              did't receive the verification OTP?{" "}
-              <span>
-                <a href="">Resend again</a>
-              </span>
-            </p>
-          </div>
+        </form>
+        <div className="login-btn">
+          <CustomButton
+            className="valid-btn"
+            name="Login"
+            type="Submit"
+            onClick={handleSubmit}
+          />
+          <p className="errorMessage">{message}</p>
         </div>
       </div>
     </div>

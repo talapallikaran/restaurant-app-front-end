@@ -179,7 +179,7 @@ body{
 }
 
 .errorMessage {
-  color: #D8000C;
+  color: #f4f4f4;
   font-size: 16px;
 }
 
@@ -1034,7 +1034,7 @@ form p{
 
 .registration-form{
   background-color: #225cbc;
-  height:700px;
+  height: 100vh;
 }
 
 .valid-btn {
@@ -1103,7 +1103,7 @@ form p{
   }
   .login-page{
     padding-top: 0;
-    margin-top: -40px;
+   
   }
 }
 
@@ -1124,7 +1124,7 @@ form p{
 /* ----------------------------login page start-------------------------- */
 .login-page{
   background-color: #225cbc;
-  height: 700px;
+  height: 100vh;
   display: flex;
   align-items: center;
 }
@@ -1169,7 +1169,6 @@ form p{
   }
   .login-page{
     padding-top: 0;
-    margin-top: -40px;
   }
 }
 
