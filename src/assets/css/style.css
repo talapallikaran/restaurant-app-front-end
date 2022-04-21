@@ -1199,3 +1199,160 @@ form p{
 
 /* ----------------------------login page end-------------------------- */
 
+
+/* ----------------------------search page start --------------------------------------- */
+
+.header{
+  padding: 15px 0;
+}
+
+
+.back-button{
+  display: flex;
+  align-items: center;
+}
+
+.back-button #fa-solid{
+  font-size: 26px;
+}
+
+.search{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.search h2{
+  font-size: 26px;
+  color: #000000;
+  font-weight: 900;
+}
+
+.search .fa-solid{
+  font-size: 28px;
+  color: #225cbc;
+}
+
+.search #fa-solid{
+  color: #225cbc;
+}
+
+.search a{
+  font-size: 28px;
+  cursor: pointer;
+  color: #225cbc;
+}
+
+.inp input{
+  border-radius: 10px;
+  height: 50px;
+  width: 335px;
+  background-color: #e8e8e8;
+  font-size: 18px;
+  color: #484848;
+  font-weight: 400;
+  text-indent: 20px;
+  width: 100%;
+  font-family: "poppins";
+  border: none;
+}
+
+.aside{
+  display: flex;
+  justify-content: center;  
+  gap: 20px;
+  padding: 0 15px;
+}
+
+.content{
+  width: 93px;
+  height: 150px;
+  margin-bottom: 50px;
+}
+
+.content .data{
+  width: 98px;
+  height: 98px;
+  border-radius: 5px;
+  background-color: #e8e8e8
+}
+
+.content h2{
+  font-size: 13px;
+  padding-top: 5px;
+  line-height: 15px;
+  color: rgb(28, 28, 28);
+  font-weight: 500;
+  font-family: "poppins";
+  text-transform: initial;
+}
+
+.location{
+
+  display:flex;
+  align-items: center;
+}
+
+.location h3{
+  font-size: 13px;
+  line-height: 28px;
+  color: #000000;
+  font-weight: 700;
+  font-family: "poppins";
+  margin-left: 3px;
+  word-break: break-word;
+}
+.type h3{
+  font-size: 13px;
+  color: #000000;
+  font-weight: 500;
+  font-family: "poppins";
+  color: rgb(105, 105, 105);
+  margin-left: 3px;
+  word-break: break-word;
+}
+
+.location a{
+  color: #2ea62e;
+  font-size: 13px;
+}
+
+.inp{
+  margin: 0 auto;
+}
+
+@media (min-width:573px) and (max-width:766px){
+  .aside{
+      row-gap: 20px;
+      column-gap: 68px;
+  }    
+}
+
+@media (min-width:424px) and (max-width:572px){
+  .aside{
+      row-gap: 20px;
+      column-gap: 57px;
+  }    
+}
+
+@media (min-width:375px) and (max-width:423px){
+  .aside{
+      row-gap: 20px;
+      column-gap:61px;
+  }
+  .content{
+    width: 130px;
+  }    
+}
+
+@media (min-width:319px) and (max-width:374px){
+  .aside{
+      row-gap: 20px;
+      column-gap: 60px;
+  }
+  .content{
+    width: 110px;
+  }    
+}
+
+/* ---------------------Search page end --------------------------------------------------- */

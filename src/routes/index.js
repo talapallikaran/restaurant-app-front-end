@@ -1,4 +1,4 @@
-import React from "react";
+import React,{useState} from "react";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Login from "../view/Authentication/Login";
 import OtpStep from "../view/Authentication/OtpStep";
@@ -7,9 +7,31 @@ import QrCodeScanner from "../view/QrCode/QrCodeScanner";
 import CheckOut from "../view/CheckOut";
 import ThankYou from "../components/ThankYou";
 import MenuLandingPage from "../view/Menu/MenuLandingPage";
+import SearchRestarunt from "../view/SearchRestarunt"
 
 function Routers(props) {
   const { history } = props;
+  
+  let userdata =
+    "eyJhbGciOiJIUzI1NiJ9.eyJSb2xlIjoiQWRtaW4iLCJJc3N1ZXIiOiJJc3N1ZXIiLCJVc2VybmFtZSI6IkphdmFJblVzZSIsImV4cCI6MTY1MDI2MjQyNCwiaWF0IjoxNjUwMjg0OTI0fQ.mCoyMyFrFp6kNjXTAX4tAVL4nOMOSJZ0o1AALAn73M0";
+
+  localStorage.setItem("userdata",userdata);
+
+
+  const [user, setUser] = useState(localStorage.getItem("userdata"));
+
+
+
+  const logout = () => {
+    history.push("/restaurant");
+  };
+
+  if (!user) {
+    {
+      logout();
+    }
+  
+  }
   return (
     <BrowserRouter
       basename="/restaurant"
@@ -23,7 +45,9 @@ function Routers(props) {
       <Route exact path={"/QrCodeScanner"} element={<QrCodeScanner />} />
       <Route exact path={"/CheckOut"} element={<CheckOut />} />
       <Route exact path={"/ThankYou"} element={<ThankYou />} />
-      <Route exact path={"/MenuLandingPage"} element={<MenuLandingPage />} />
+      <Route exact path={"/MenuLandingPage/:id"} element={<MenuLandingPage />} />
+      <Route exact path={"/SearchRestarunt"} element={<SearchRestarunt />} />
+
       </Routes>
     </BrowserRouter>
   );
