@@ -43,3 +43,9 @@ export const sendMobileVerificationOTPFailed = (error) => {
     payload: error,
   };
 };
+
+export const resetState = () => {
+  return {
+    type: actions.resetState.RESET_STATE,
+  };
+};
