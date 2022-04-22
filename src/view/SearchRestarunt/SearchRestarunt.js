@@ -4,19 +4,20 @@ import _debounce from "lodash/debounce";
 import axios from "axios";
 import InputField from "../../components/InputField/InputField";
 
-function SearchRestarunt({ getdataAction, items }) {
+function SearchRestarunt(props) {
+  const { getdataAction, items, resetState } = props;
 
-  
   useEffect(() => {
     getdataAction();
+    resetState();
   }, []);
 
-  
   const [inputText, setInputText] = useState("");
-  const filteredData = items.data&&items.data.filter((restaurants) =>
-  restaurants.name.toLowerCase().includes(inputText.toLowerCase())
-  );
-
+  const filteredData =
+    items.data &&
+    items.data.filter((restaurants) =>
+      restaurants.name.toLowerCase().includes(inputText.toLowerCase())
+    );
 
   // const debounceFn = useCallback(_debounce(handleDebounceFn, 2000), []);
   // function handleDebounceFn(inputValue) {
@@ -68,40 +69,42 @@ function SearchRestarunt({ getdataAction, items }) {
       <section className="main">
         <div className="container">
           <div className="row aside">
-            {filteredData&&filteredData.map((restaurants) => {
-              return (
-                <div className="col-sm-3 content" key={restaurants.id}>
-                  <div className="row">
-                    <div className="col-12 data">
-                      <img src="" />
-                    </div>
-                    <Link to={`/MenuLandingPage/${restaurants.id}`}style={{ textDecoration: 'none' }}>
-                          
-                    <h2>{restaurants.name}</h2>
-                    </Link>
-
-                    <div className="main-content">
-                      <div className="location">
-                        <a href="#">
-                          <i className="fa-solid fa-location-crosshairs"></i>
-                        </a>
-                        <h3>{restaurants.city}</h3>
+            {filteredData &&
+              filteredData.map((restaurants) => {
+                return (
+                  <div className="col-sm-3 content" key={restaurants.id}>
+                    <div className="row">
+                      <div className="col-12 data">
+                        <img src="" />
                       </div>
+                      <Link
+                        to={`/MenuLandingPage/${restaurants.id}`}
+                        style={{ textDecoration: "none" }}
+                      >
+                        <h2>{restaurants.name}</h2>
+                      </Link>
 
-                      <div className="type">
-                        <h3>{restaurants.type}</h3>
+                      <div className="main-content">
+                        <div className="location">
+                          <a href="#">
+                            <i className="fa-solid fa-location-crosshairs"></i>
+                          </a>
+                          <h3>{restaurants.city}</h3>
+                        </div>
+
+                        <div className="type">
+                          <h3>{restaurants.type}</h3>
+                        </div>
                       </div>
                     </div>
                   </div>
-                </div>
-              );
-            })}
+                );
+              })}
           </div>
         </div>
       </section>
     </div>
   );
 }
-
 
 export default SearchRestarunt;
