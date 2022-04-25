@@ -1,7 +1,6 @@
 import { React, useState, useEffect, useCallback } from "react";
 import { Link } from "react-router-dom";
 import _debounce from "lodash/debounce";
-import axios from "axios";
 import InputField from "../../components/InputField/InputField";
 
 function SearchRestarunt(props) {
@@ -34,6 +33,7 @@ function SearchRestarunt(props) {
     setInputText(lowerCase);
     // debounceFn(lowerCase);
   };
+
 
   return (
     <div className="wrapper">

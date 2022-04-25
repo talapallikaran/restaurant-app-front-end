@@ -23,3 +23,10 @@ export const restaurantdata = {
   GET_RESTAURANT_DATA_SUCCESS: "GET_RESTAURANT_DATA_SUCCESS",
   GET_RESTAURANT_DATA_FAILED: "GET_RESTAURANT_DATA_FAILED",
 };
+
+// **************getMenuData*****************
+export const menuData = {
+  GET_MENU_REQUESTED: 'GET_MENU_REQUESTED',
+  GET_MENU_SUCCESS : 'GET_MENU_SUCCESS',
+  GET_MENU_FAILED : "GET_MENU_FAILED",
+}
