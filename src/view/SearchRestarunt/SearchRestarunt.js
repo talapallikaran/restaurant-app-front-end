@@ -1,7 +1,6 @@
 import { React, useState, useEffect, useCallback } from "react";
 import { Link } from "react-router-dom";
 import _debounce from "lodash/debounce";
-import axios from "axios";
 import InputField from "../../components/InputField/InputField";
 
 function SearchRestarunt({ getdataAction, items }) {
@@ -13,6 +12,7 @@ function SearchRestarunt({ getdataAction, items }) {
 
   
   const [inputText, setInputText] = useState("");
+  
   const filteredData = items.data&&items.data.filter((restaurants) =>
   restaurants.name.toLowerCase().includes(inputText.toLowerCase())
   );
@@ -33,6 +33,7 @@ function SearchRestarunt({ getdataAction, items }) {
     setInputText(lowerCase);
     // debounceFn(lowerCase);
   };
+
 
   return (
     <div className="wrapper">

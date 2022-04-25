@@ -25,7 +25,7 @@ export const sendMobileNumberfailed = (error) => {
 
 //**********************************OTP ACTION********************************************* */
 export const sendMobileVerificationOTP = (id) => {
-  return {
+    return {
     type: actions.otpVerificationAction.POST_OTP,
     payload: id,
   };

@@ -923,7 +923,7 @@ a:hover:after{
 /* ----------------------------Thank You page-------------------------- */
 .thankyoucontent{
   background-color: #373839;
-  height: 1000px;
+  height: 100vh;
   width: 100%;
   text-align: center;
   margin:auto;
@@ -1357,3 +1357,147 @@ form p{
 }
 
 /* ---------------------Search page end --------------------------------------------------- */
+
+
+
+/*----------------------------MenuLanding page Re-Design-------------------------- */
+
+
+
+.landingRoot{
+  width: 100%;
+  height: 100%;
+  background-color: #ffffff;
+  padding: 16px
+}
+.headerDivision {
+  height: 70px;
+  justify-content: space-between;
+  display: flex;
+  align-items: center;
+}
+#fa-solid {
+  color: #225cbc;
+}
+.divSelectedRestaurent {
+   height: 175px;
+   border-radius: 15px;
+   background-color: #c3c3c3;
+    align-items: end;
+    display: flex;
+    padding: 0px 0px 20px 20px;
+}
+.divSelectedRestaurent h2 {
+font-size: 24px;
+color: #ffffff;
+font-weight: 450;
+font-family: "Roboto";
+filter: drop-shadow(-3.464px 2px 3.5px rgba(0,0,0,0.6));
+}
+.divSelectedRestaurent p {
+font-size: 15px;
+color: #ffffff; 
+font-weight: 400;
+font-family: "Roboto";
+filter: drop-shadow(-3.464px 2px 3.5px rgba(0,0,0,0.6));
+}
+.divMenuItem {
+  height: 100%;
+  border-radius: 15px;
+  background-color: #f1f1f1;
+  margin-top: 20px;
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.itemImage {
+  width: 69px;
+  height: 55px;
+  border-radius: 10px;
+  background-color: #dadada;
+}
+.itemletSide {
+  display: flex;
+  gap: 12px
+}
+.itemList {
+  /* display: flex; */
+  align-items: center;
+}
+.itemList h1 {
+font-size: 16px;
+color: #225cbc;
+font-weight: 900;
+font-family: "Roboto";
+}
+.itemList p {
+  font-size: 11px;
+color: #000000;
+font-weight: 400;
+font-style: italic;
+font-family: "Roboto";
+}
+.itemRightSide {
+
+}
+.itemRightSide button {
+  width: 100px;
+  height: 30px;
+  border-radius: 5px;
+  background-color: #225cbc;
+font-size: 13px;
+color: #ffffff;
+font-weight: 700;
+font-family: "Roboto";
+border: 1px solid #225cbc;
+}
+.itemRightSide .chnageButton {
+  width: 75px;
+  height: 30px;
+  border-radius: 5px;
+  background-color: #ffffff;
+  border: 1px solid #225cbc;
+  color: #225cbc      
+}
+.footer {
+  width: 100%;
+height: 50px;
+background-color: #225cbc;
+ position: fixed; 
+  top: 617px;
+  bottom: 0px;
+  position: fixed;
+  flex-direction: row;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  align-content: center;
+  padding: 16px;
+}
+
+.footer h2 { 
+font-size: 18px;
+color: #ffffff;
+font-weight: 400;
+font-family: "Roboto";
+}
+.footer button {
+  width: 100px;
+height: 30px;
+border-radius: 10px;
+background-color: #ffffff;
+align-items: center;
+width: 100px;
+height: 30px;
+font-size: 16px;
+color: #225cbc;
+font-weight: 700;
+font-family: "Roboto";
+align-items: center;
+}
+
+
+/* ----------------------------MenuLanding page Re-Design-------------------------- */
+
+

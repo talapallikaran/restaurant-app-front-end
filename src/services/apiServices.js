@@ -89,3 +89,14 @@ export async function fetchrestaurantData(parameters) {
   }
 
 }
+
+
+export async function fetchMenuData(id) {
+  try {
+    const response = await instance.get(`/restaurant?id=${id}`,);
+    console.log("menu Data response in ServiceFile",response);
+    return response;
+  } catch (error) {
+    return false;
+  }
+}
