@@ -1,6 +1,7 @@
 import {
   mobileAction,
   otpVerificationAction,
+  resetState,
 } from "../constants/actionsConstants";
 
 const mobile = {
@@ -64,6 +65,12 @@ const mobileReducer = (state = initialState, action) => {
         apiLoading: action.payload.apiLoading,
         apiGetDataSuccess: action.payload.apiGetDataSuccess,
         apiGetDataFail: action.payload.apiGetDataFail,
+      };
+    }
+    case resetState.RESET_STATE: {
+      return {
+        ...state,
+        otp: initialState.otp,
       };
     }
     default:

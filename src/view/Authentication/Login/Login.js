@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 import InputField from "../../../components/InputField/InputField";
 import CustomButton from "../../../components/CustomButton/CustomButton";
 import { useNavigate } from "react-router-dom";
+import logo from "../../../assets/img/logo.png";
 import {
   PhoneNumberUtil,
   PhoneNumberFormat as PNF,
@@ -28,7 +29,7 @@ function Login(props) {
           };
           userAction(parameter);
           localStorage.setItem("phone", `${mobile}`);
-          navigate("/otpstep");
+          navigate("/OtpStep");
         }
       } else {
         setMessage("Enter valid number");
@@ -45,44 +46,29 @@ function Login(props) {
   };
 
   return (
-    <div className="wrapper">
-      <div className="wrapper-mobile">
-        <div className="container">
-          <div className="row">
-            <div className="col-12 icon">
-              <a href="">
-                <i className="fa-solid fa-mobile-screen"></i>
-              </a>
-              <h2>verification</h2>
-              <p>
-                we will you send a <span className="bold">one time password</span> on your
-                mobile number
-              </p>
-            </div>
-          </div>
-          <div className="row verification">
-            <div className="col-lg-5 col-md-5 col-sm-12">
-              <InputField
-                type="text"
-                id="phone"
-                name="mobile"
-                placeholder="Enter Mobile"
-                maxLength="10"
-                value={mobile}
-                onChange={handleChange}
-              />
-              <br />
-              <p className="errorMessage">{message}</p>
-            </div>
-            <div className="col-lg-5 col-md-5 col-sm-12">
-              <CustomButton
-                className="button"
-                name="get otp"
-                type="Submit"
-                onClick={handleSubmit}
-              />
-            </div>
-          </div>
+    <div className="wrapper registration-form">
+      <div className="container">
+        <div className="restaurant-img">
+          <img src={logo} alt="does not open" className="logo" />
+        </div>
+        <div className="validation">
+          <InputField
+            type="text"
+            id="mobile"
+            name="mobile"
+            placeholder="Enter Mobile"
+            maxLength="10"
+            value={mobile}
+            onChange={handleChange}
+            className="validation-data"
+          />
+          <CustomButton
+            className="valid-btn"
+            name=" Send OTP"
+            type="Submit"
+            onClick={handleSubmit}
+          />
+          <p className="errorMessage">{message}</p>
         </div>
       </div>
     </div>

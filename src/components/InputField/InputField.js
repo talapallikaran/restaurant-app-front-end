@@ -9,17 +9,21 @@ const InputField = ({
   placeholder,
   onChange,
   maxLength,
+  tabIndex,
+  onkeyup,
 }) => {
   return (
     <input
       type={type}
-      value={value}
-      name={name}
-      className={className}
       id={id}
+      name={name}
       placeholder={placeholder}
-      onChange={onChange}
+      className={className}
+      value={value}
       maxLength={maxLength}
+      tabIndex={tabIndex}
+      onChange={onChange}
+      onKeyUp={onkeyup}
     />
   );
 };
