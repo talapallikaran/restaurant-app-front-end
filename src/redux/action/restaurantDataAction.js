@@ -24,7 +24,7 @@ export const restaurantdatafail = (error) => {
 
 //**********************MenuData*****************************/
 export const MenuFetchData = (id) => {
-  console.log("in Action file id get", id);
+
   return {
     type: actions.menuData.GET_MENU_REQUESTED,
     payload: id
@@ -42,5 +42,42 @@ export const MenuFetchDataFail = (error) => {
   return {
     type: actions.menuData.GET_MENU_FAILED,
     payload: error,
+  };
+};
+
+
+export const Add_To_Plate = (data) => {
+ 
+  return {
+    type: actions.menuData.ADD_TO_PLATE,
+    payload: {
+      data,
+    quantity: "1",
+
+    }
+  };
+};
+
+
+export const Remove_To_Plate = (menu_id) => {
+
+
+  return {
+    type: actions.menuData.REMOVE_TO_PLATE,
+    payload:menu_id
+  };
+};
+export const ADD_Quantity = (menu_id) => {
+  return {
+    type: actions.menuData.ADD_QUANTITY,
+    payload:menu_id
+  };
+};
+
+export const Remove_Quantity = (menu_id) => {
+
+  return {
+    type: actions.menuData.REMOVE_QUANTITY,
+    payload:menu_id
   };
 };

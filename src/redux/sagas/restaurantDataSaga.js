@@ -71,7 +71,7 @@ function* getMenuData(action) {
       return response;
     };
     const response = yield call(data);
-    console.log("Response in saga file >>>>>>>>>>>>>>>>>>>>>>>>>>",response);
+
     if (response.status === 200) {
       // api in progress - State - false
       // Api is successful - State - true
