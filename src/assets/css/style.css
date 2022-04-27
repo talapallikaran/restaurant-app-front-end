@@ -1459,7 +1459,7 @@ border: 1px solid #225cbc;
   border: 1px solid #225cbc;
   color: #225cbc      
 }
-.footer {
+.payout {
   width: 100%;
 height: 50px;
 background-color: #225cbc;
@@ -1475,13 +1475,13 @@ background-color: #225cbc;
   padding: 16px;
 }
 
-.footer h2 { 
+.payout h2 { 
 font-size: 18px;
 color: #ffffff;
 font-weight: 400;
 font-family: "Roboto";
 }
-.footer button {
+.payout button {
   width: 100px;
 height: 30px;
 border-radius: 10px;

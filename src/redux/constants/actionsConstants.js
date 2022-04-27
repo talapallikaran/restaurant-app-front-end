@@ -17,7 +17,7 @@ export const appAction = {
 export const resetState = {
   RESET_STATE: "reset/RESET_STATE",
 };
-
+// *************getRestaurntData**************************
 export const restaurantdata = {
   GET_RESTAURANT_DATA_REQUESTED: "GET_RESTAURANT_DATA_REQUESTED",
   GET_RESTAURANT_DATA_SUCCESS: "GET_RESTAURANT_DATA_SUCCESS",
@@ -29,4 +29,9 @@ export const menuData = {
   GET_MENU_REQUESTED: 'GET_MENU_REQUESTED',
   GET_MENU_SUCCESS : 'GET_MENU_SUCCESS',
   GET_MENU_FAILED : "GET_MENU_FAILED",
+  ADD_TO_PLATE:'ADD_TO_PLATE',
+  REMOVE_TO_PLATE:'REMOVE_TO_PLATE',
+  REMOVE_QUANTITY :'REMOVE_QUANTITY',
+  ADD_QUANTITY:'ADD_QUANTITY',
+  
 }
