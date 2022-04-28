@@ -15,6 +15,20 @@ function Login(props) {
 
   const navigate = useNavigate();
 
+  const [user, setUser] = useState(localStorage.getItem("user"));
+
+  useEffect(() => {
+    const login = () => {
+      navigate("/SearchRestarunt");
+    };
+
+    if (user) {
+      {
+        login();
+      }
+    }
+  }, []);
+
   const handleSubmit = (e) => {
     if (mobile.length !== 10) {
       setMessage("Enter 10 Digit Number");

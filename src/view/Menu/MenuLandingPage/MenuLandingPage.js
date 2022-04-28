@@ -1,6 +1,9 @@
 import React, { useEffect, useState } from "react";
 import { useNavigate } from "react-router-dom";
 import { useParams } from "react-router-dom";
+import CustomButton from "../../../components/CustomButton";
+import LogoutButton from "../../../components/LogoutButton";
+
 
 const MenuLandingPage = (props) => {
   const [isSelectItem, setSelecetItem] = useState(false);
@@ -23,14 +26,17 @@ const MenuLandingPage = (props) => {
 
   const _handleAction = (data) => {
     Add_To_Plate(data);
+    alert("item added to cart")
   };
 
   return (
     <>
       <div className="landingRoot">
-        <div className="headerDivision" onClick={previousPage}>
-          <i className="fa-solid fa-arrow-left" id="fa-solid"></i>
-          <i className="fa-solid fa-qrcode" id="fa-solid"></i>
+        <div className="headerDivision" >
+          
+          <i className="fa-solid fa-arrow-left" id="fa-solid" onClick={previousPage}></i>
+          <LogoutButton/>
+
         </div>
 
         <div className="divSelectedRestaurent">

@@ -46,7 +46,6 @@ export default function CheckOut(props) {
           alert(response.razorpay_payment_id);
           navigate("/ThankYou");
 
-          console.log("checking-->", response.razorpay_payment_id);
         },
         prefill: {
           name: "Piyush Garg",

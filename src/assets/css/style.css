@@ -441,6 +441,11 @@ img{
   padding: 4px 12px;
   cursor: pointer;
 }
+.nav-item{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 
 .absolute{
   position: relative;
@@ -952,7 +957,17 @@ a:hover:after{
   border-radius: 10px;
   text-transform: uppercase;
 }
-
+.Logout {
+  background:  rgb(91 71 183);
+  border:none;
+  padding: 10px 20px;
+  margin: 20px 13px;
+  border-radius: 5px;
+  cursor: pointer;
+  color: #f4f4f4;
+  border-radius: 10px;
+  text-transform: uppercase;
+}
 /* ----------------------------Thank You page-------------------------- */
 
 /* ----------------------------registration page start-------------------------- */
