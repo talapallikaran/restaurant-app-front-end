@@ -21,6 +21,10 @@ function OtpStep(props) {
     if (otp && otp.status === "success") {
       localStorage.removeItem("phone");
       setMessage("Login Successful");
+      if (otp.token) {
+        localStorage.setItem("user", JSON.stringify(otp.token));
+      }
+
       navigate("/SearchRestarunt");
     } else if (otp && otp.status === "failed") {
       setMessage("Invalid OTP");

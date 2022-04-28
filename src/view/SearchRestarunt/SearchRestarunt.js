@@ -2,6 +2,7 @@ import { React, useState, useEffect, useCallback } from "react";
 import { Link } from "react-router-dom";
 import _debounce from "lodash/debounce";
 import InputField from "../../components/InputField/InputField";
+import LogoutButton from "../../components/LogoutButton";
 
 function SearchRestarunt(props) {
   const { getdataAction, items, resetState } = props;
@@ -44,14 +45,15 @@ function SearchRestarunt(props) {
               <Link to={"/"}>
                 <i className="fa-solid fa-arrow-left" id="fa-solid"></i>
               </Link>
-              <span>
-                <h2></h2>
-              </span>
+           
             </div>
+            <div className="nav-item">
+            <LogoutButton/>
 
             <Link to={"/QrCodeScanner"}>
               <i className="fa-solid fa-qrcode"></i>
             </Link>
+            </div>
           </div>
         </div>
         <div className="row">

@@ -1,4 +1,5 @@
 import instance from "./axios";
+import authHeader from "./auth-header";
 
 // Fetching data from API
 export async function fetchUserData(parameters) {
@@ -78,22 +79,22 @@ export async function deleteUserData(parameters) {
   // return axios.delete("/userdata/delete", parameters);
 }
 
-export async function fetchrestaurantData(parameters) {
-
-
+export async function fetchrestaurantData() {
   try {
-    const response = await instance.get("/restaurant", {});
+    const response = await instance.get("/restaurant", {
+      headers: authHeader(),
+    });
     return response;
   } catch (error) {
     return false;
   }
-
 }
-
 
 export async function fetchMenuData(id) {
   try {
-    const response = await instance.get(`/restaurant?id=${id}`,);
+    const response = await instance.get(`/restaurant?id=${id}`, {
+      headers: authHeader(),
+    });
 
     return response;
   } catch (error) {
