@@ -47,7 +47,6 @@ export const MenuFetchDataFail = (error) => {
 
 
 export const Add_To_Plate = (data) => {
- 
   return {
     type: actions.menuData.ADD_TO_PLATE,
     payload: {
@@ -79,5 +78,10 @@ export const Remove_Quantity = (menu_id) => {
   return {
     type: actions.menuData.REMOVE_QUANTITY,
     payload:menu_id
+  };
+};
+export const resetState = () => {
+  return {
+    type: actions.resetState.RESET_STATE,
   };
 };

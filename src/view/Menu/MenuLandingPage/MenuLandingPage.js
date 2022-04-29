@@ -8,7 +8,7 @@ const MenuLandingPage = (props) => {
   const [value, setValue] = useState(0);
   const navigate = useNavigate();
 
-  const { menu, MenuFetchData } = props;
+  const { menu, MenuFetchData,resetState } = props;
   const { id } = useParams();
 
   useEffect(() => {
@@ -16,7 +16,10 @@ const MenuLandingPage = (props) => {
   }, []);
 
   const previousPage = () => {
-    return navigate("/SearchRestarunt");
+    if (window.confirm("Are you sure you want to leave this restaurant ?")) {
+      resetState();
+      navigate("/SearchRestarunt");
+    }
   };
   const handlePayOut = () => {
     navigate("/CheckOut");

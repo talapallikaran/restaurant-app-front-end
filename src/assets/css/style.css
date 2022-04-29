@@ -1456,7 +1456,8 @@ font-family: "Roboto";
 
 }
 .itemRightSide button {
-  width: 100px;
+cursor: pointer;
+width: 100px;
   height: 30px;
   border-radius: 5px;
   background-color: #225cbc;

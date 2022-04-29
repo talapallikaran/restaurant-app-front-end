@@ -16,8 +16,18 @@ function OtpStep(props) {
   const [message, setMessage] = useState("");
 
   const navigate = useNavigate();
+  const [user, setUser] = useState(localStorage.getItem("user"));
 
   useEffect(() => {
+    const login = () => {
+      navigate("/SearchRestarunt");
+    };
+
+    if (user) {
+      {
+        login();
+      }
+    }
     if (otp && otp.status === "success") {
       localStorage.removeItem("phone");
       setMessage("Login Successful");
