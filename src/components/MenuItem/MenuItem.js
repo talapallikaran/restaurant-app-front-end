@@ -21,13 +21,13 @@ function MenuItem(props) {
           <p>{data.description}</p>
         </div>
       </div>
-      <div className="itemRightSide" onClick={() => _handleAction(data)}>
+      <div className="itemRightSide">
         {isSelectItem ? (
           <button className="chnageButton">
             <span>Added</span>
           </button>
         ) : (
-          <button className="button">
+          <button className="button" onClick={() => _handleAction(data)}>
             <span>Add to plate</span>
           </button>
         )}
