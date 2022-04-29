@@ -2,6 +2,7 @@ import React, { useCallback } from "react";
 import useRazorpay from "react-razorpay";
 import { useNavigate, Link } from "react-router-dom";
 import CustomButton from "../../../src/components/CustomButton/CustomButton";
+import history from "../../utils/history";
 
 export default function CheckOut(props) {
   const { addedItems, Remove_To_Plate, ADD_Quantity, Remove_Quantity } = props;
@@ -17,13 +18,15 @@ export default function CheckOut(props) {
   };
 
   const handleRemoveQuantity = (menu_id, quantity) => {
-
     if (quantity <= 1) {
       alert("item can't be zero");
       return;
     } else {
       Remove_Quantity(menu_id);
     }
+  };
+  const backpage = (e) => {
+    history.back();
   };
 
   // ****************Razorpay section***********************************************
@@ -45,7 +48,6 @@ export default function CheckOut(props) {
         handler: function (response) {
           alert(response.razorpay_payment_id);
           navigate("/ThankYou");
-
         },
         prefill: {
           name: "Piyush Garg",
@@ -70,9 +72,8 @@ export default function CheckOut(props) {
     <div className="wrapper">
       <div className="container">
         <div className="top-bar">
-          <Link to={"/SearchRestarunt"}>
-            <i className="fa-solid fa-arrow-left"></i>
-          </Link>
+          <i className="fa-solid fa-arrow-left" onClick={backpage}></i>
+
           <span>
             <h2>payment</h2>
             <div className="Quantity">

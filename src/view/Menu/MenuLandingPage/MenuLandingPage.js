@@ -1,16 +1,14 @@
 import React, { useEffect, useState } from "react";
 import { useNavigate } from "react-router-dom";
 import { useParams } from "react-router-dom";
-import CustomButton from "../../../components/CustomButton";
 import LogoutButton from "../../../components/LogoutButton";
-
+import MenuItem from "../../../components/MenuItem";
 
 const MenuLandingPage = (props) => {
-  const [isSelectItem, setSelecetItem] = useState(false);
   const [value, setValue] = useState(0);
   const navigate = useNavigate();
 
-  const { menu, MenuFetchData, Add_To_Plate } = props;
+  const { menu, MenuFetchData } = props;
   const { id } = useParams();
 
   useEffect(() => {
@@ -24,19 +22,16 @@ const MenuLandingPage = (props) => {
     navigate("/CheckOut");
   };
 
-  const _handleAction = (data) => {
-    Add_To_Plate(data);
-    alert("item added to cart")
-  };
-
   return (
     <>
       <div className="landingRoot">
-        <div className="headerDivision" >
-          
-          <i className="fa-solid fa-arrow-left" id="fa-solid" onClick={previousPage}></i>
-          <LogoutButton/>
-
+        <div className="headerDivision">
+          <i
+            className="fa-solid fa-arrow-left"
+            id="fa-solid"
+            onClick={previousPage}
+          ></i>
+          <LogoutButton />
         </div>
 
         <div className="divSelectedRestaurent">
@@ -49,30 +44,8 @@ const MenuLandingPage = (props) => {
         {menu &&
           menu[0].menu.map((data) => {
             return (
-              <div className="divMenuItem" key={data.menu_id}>
-                <div className="itemletSide">
-                  <img className="itemImage" src={data.menu_image} />
-                  <div className="itemList">
-                    <h1>{data.menu_name}</h1>
-                    <h1>₹{data.menu_price}</h1>
-
-                    <p>{data.description}</p>
-                  </div>
-                </div>
-                <div
-                  className="itemRightSide"
-                  onClick={() => _handleAction(data)}
-                >
-                  <button
-                    className={
-                      isSelectItem === false ? "button" : "chnageButton"
-                    }
-                  >
-                    <span>
-                      {isSelectItem === false ? "Add to plate" : "Added"}
-                    </span>
-                  </button>
-                </div>
+              <div key={data.menu_id}>
+                <MenuItem data={data} />
               </div>
             );
           })}
