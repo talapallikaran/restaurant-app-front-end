@@ -3,6 +3,7 @@ import { connect } from "react-redux";
 import {
   MenuFetchData,
   Add_To_Plate,
+  resetState,
 } from "../../../redux/action/restaurantDataAction";
 
 const mapStateToProps = (state) => {
@@ -14,6 +15,13 @@ const mapStateToProps = (state) => {
 const mapDispatchToProps = (dispatch) => {
   return {
     MenuFetchData: (id) => dispatch(MenuFetchData(id)),
+
+    Add_To_Plate: (data) => {
+      dispatch(Add_To_Plate(data));
+    },
+    resetState: () => {
+      dispatch(resetState());
+    },
   };
 };
 

@@ -1,4 +1,4 @@
-import { menuData } from "../constants/actionsConstants";
+import { menuData, resetState } from "../constants/actionsConstants";
 
 // localStorage.removeItem("menuItems")
 const GetMenuData = {
@@ -42,6 +42,7 @@ const getMenuData = (state = initialState, action) => {
     }
     case menuData.ADD_TO_PLATE: {
       addedItems.push(action.payload);
+
       localStorage.setItem("menuItems", JSON.stringify(addedItems));
       return {
         ...state,
@@ -94,6 +95,13 @@ const getMenuData = (state = initialState, action) => {
       return {
         ...state,
         addedItems: removeCart,
+      };
+    }
+    case resetState.RESET_STATE: {
+      localStorage.removeItem("menuItems");
+      return {
+        ...state,
+        addedItems: [],
       };
     }
     default:
