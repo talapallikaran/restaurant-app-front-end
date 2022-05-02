@@ -879,10 +879,58 @@ a:hover:after{
 }
 
 .pay{
-  height: 150px;
+ /* min-height:90px; */
+  width: 100%;
   border-radius: 20px;
   background-color: #f1f1f2;
   border: 1px solid #fff;
+  padding: 12px;
+
+}
+
+.item {
+    display: flex;
+    align-items: flex-start;
+}
+
+.item-name {
+  flex: 1;
+}
+
+.item-qty {
+  display: flex;
+  align-items: center;
+  margin-right: 24px;
+  border: 2px solid #225cbc;
+  border-radius: 12px;
+  padding: 0 12px;
+  color: #225cbc;
+}                    
+.add-qty {
+  border: none;
+  font-size: 20px;
+  color: #225cbc;
+}
+.qty{
+  padding: 0 8px;
+}
+.item-price {
+  margin-right: 12px;
+}
+.btn {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: flex-end;
+  margin: 2px 0;
+}
+.remove-item{
+  border: 2px solid #225cbc;
+  border-radius: 8px;
+  font-size: 7px;
+  padding: 3px 4px;
+  color: #225cbc;
+  font-weight: 900;
 }
 
 .footer{
@@ -1498,11 +1546,10 @@ font-weight: 400;
 font-family: "Roboto";
 }
 .payout button {
-  width: 100px;
-height: 30px;
+min-height: 30px;
 border-radius: 10px;
 background-color: #ffffff;
-align-items: center;
+border: 1px solid #ffffff;
 width: 100px;
 height: 30px;
 font-size: 16px;

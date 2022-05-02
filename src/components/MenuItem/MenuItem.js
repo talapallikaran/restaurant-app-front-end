@@ -2,10 +2,8 @@ import React, { useState } from "react";
 
 function MenuItem(props) {
   const { Add_To_Plate, data } = props;
-  const [isSelectItem, setSelecetItem] = useState(false);
-
+  const [isSelectItem, setSelecetItem] = useState(props.setSelecetItem);
   const _handleAction = (data) => {
-
     Add_To_Plate(data);
     setSelecetItem(true);
   };
