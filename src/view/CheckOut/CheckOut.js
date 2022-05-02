@@ -75,14 +75,7 @@ export default function CheckOut(props) {
           <i className="fa-solid fa-arrow-left" onClick={backpage}></i>
 
           <span>
-            <h2>payment</h2>
-            <div className="Quantity">
-              {/* <h2>Total Quantity:{addedItems.map(
-                (item) =>
-                console.log("this is ndjnf-->",item.quantity),
-                  // (totalQuantity=+item.quantity)
-              )}</h2> */}
-            </div>
+            <h2>Payment</h2>
           </span>
         </div>
         <div className="row col-gap">
@@ -92,39 +85,52 @@ export default function CheckOut(props) {
                 item && item.data && item.data.menu_price * item.quantity;
               return (
                 <div
-                  className="col-12 pay"
+                  className="pay"
                   key={item && item.data && item.data.menu_id}
                 >
-                  <h4>{item && item.data && item.data.menu_name}</h4>
-                  <h4>₹{item && item.data && item.data.menu_price}</h4>
-                  <h5>Quantity:{item.quantity}</h5>
-
-                  <CustomButton
-                    className="button"
-                    name="Remove"
-                    type="Submit"
-                    onClick={() => {
-                      handleRemove(item && item.data && item.data.menu_id);
-                    }}
-                  />
-
-                  <CustomButton
-                    className="btn btn-primary btn-lg me-2"
-                    name="Add quantity"
-                    onClick={() => {
-                      handleAddQuantity(item && item.data && item.data.menu_id);
-                    }}
-                  />
-                  <CustomButton
-                    className="btn btn-primary btn-lg me-2"
-                    name="Remove quantity"
-                    onClick={() => {
-                      handleRemoveQuantity(
-                        item && item.data && item.data.menu_id,
-                        item.quantity
-                      );
-                    }}
-                  />
+                  <div className="item">
+                    <span className="item-name">
+                      {item && item.data && item.data.menu_name}
+                    </span>
+                    <div className="item-qty">
+                      <CustomButton
+                        className="add-qty"
+                        name="+"
+                        onClick={() => {
+                          handleAddQuantity(
+                            item && item.data && item.data.menu_id
+                          );
+                        }}
+                      />
+                      <span className="qty">{item.quantity}</span>
+                      <CustomButton
+                        className="add-qty"
+                        name="-"
+                        onClick={() => {
+                          handleRemoveQuantity(
+                            item && item.data && item.data.menu_id,
+                            item.quantity
+                          );
+                        }}
+                      />
+                    </div>
+                    <span className="item-price">
+                      ₹
+                      {item &&
+                        item.data &&
+                        item.data.menu_price * item.quantity}
+                    </span>
+                    <div className="btn">
+                      <CustomButton
+                        className="remove-item"
+                        name="X"
+                        type="Submit"
+                        onClick={() => {
+                          handleRemove(item && item.data && item.data.menu_id);
+                        }}
+                      />
+                    </div>
+                  </div>
                 </div>
               );
             })

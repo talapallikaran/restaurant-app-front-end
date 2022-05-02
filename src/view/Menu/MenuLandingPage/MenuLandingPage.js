@@ -8,7 +8,7 @@ const MenuLandingPage = (props) => {
   const [value, setValue] = useState(0);
   const navigate = useNavigate();
 
-  const { menu, MenuFetchData,resetState } = props;
+  const { menu, MenuFetchData, resetState, Add_To_Plate, addedItems } = props;
   const { id } = useParams();
 
   useEffect(() => {
@@ -47,16 +47,23 @@ const MenuLandingPage = (props) => {
         {menu &&
           menu[0].menu.map((data) => {
             return (
-              <div key={data.menu_id}>
-                <MenuItem data={data} />
-              </div>
+              <MenuItem
+                data={data}
+                Add_To_Plate={Add_To_Plate}
+                setSelecetItem={
+                  addedItems.length > 0 &&
+                  addedItems.filter((e) => e.data.menu_id === data.menu_id)
+                    .length > 0
+                }
+                key={data.menu_id}
+              />
             );
           })}
         <div></div>
       </div>
       <div className="payout">
         <h2>{value} itmes added</h2>
-        <button onClick={handlePayOut}>payout</button>
+        <button onClick={handlePayOut}>Payout</button>
       </div>
     </>
   );
