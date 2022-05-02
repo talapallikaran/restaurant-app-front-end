@@ -73,10 +73,7 @@ export default function CheckOut(props) {
       <div className="container">
         <div className="top-bar">
           <i className="fa-solid fa-arrow-left" onClick={backpage}></i>
-
-          <span>
-            <h2>Payment</h2>
-          </span>
+          <span className="title">Payment</span>
         </div>
         <div className="row col-gap">
           {addedItems.length ? (
@@ -140,23 +137,19 @@ export default function CheckOut(props) {
         </div>
       </div>
       <div className="footer">
-        <div className="container">
-          <div className="row">
-            <div className="col-12 footer-content">
-              <div className="rupees">
-                <a href="#">
-                  <i className="fa-solid fa-indian-rupee-sign"></i>
-                </a>
-                <h2>{totalQuantity}</h2>
-              </div>
-              <CustomButton
-                className="button"
-                name="PayNow"
-                type="Submit"
-                onClick={() => handlePayment(totalQuantity)}
-              />
-            </div>
+        <div className="col-12 footer-content">
+          <div className="rupees">
+            <a href="#">
+              <i className="fa-solid fa-indian-rupee-sign"></i>
+            </a>
+            <span>{totalQuantity}</span>
           </div>
+          <CustomButton
+            className="button"
+            name="PayNow"
+            type="Submit"
+            onClick={() => handlePayment(totalQuantity)}
+          />
         </div>
       </div>
     </div>

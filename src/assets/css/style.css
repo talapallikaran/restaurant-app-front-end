@@ -860,14 +860,14 @@ a:hover:after{
 }
 
 .top-bar .fa-solid{
-  font-size: 24px;
+  font-size: 28px;
   color:#225cbc;
   border-radius: 10px;
   padding: 10px;
   cursor: pointer;
 }
 
-.top-bar h2{
+.top-bar span{
   font-size: 24px;
 }
 
@@ -934,8 +934,13 @@ a:hover:after{
 }
 
 .footer{
+  width: 100%;
+  max-height: 63px;
   background-color: #225cbc;
   color: white;
+  position: fixed;
+  /* top: 607px; */
+  bottom: 0px;
 }
 
 .rupees{
@@ -949,8 +954,9 @@ a:hover:after{
   margin-right: 8px;
 }
 
-.footer h2{
+.footer span{
   font-size: 28px;
+  font-weight: 900;
 }
 
 .footer button{
@@ -968,7 +974,7 @@ a:hover:after{
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 20px 10px;
+  padding: 10px 10px;
 }
 
 /*--------------------------- Checkout page end here------------------------------------ */
@@ -1525,10 +1531,9 @@ border: 1px solid #225cbc;
 }
 .payout {
   width: 100%;
-height: 50px;
-background-color: #225cbc;
- position: fixed; 
-  top: 617px;
+  max-height: 60px;
+  background-color: #225cbc;
+  /* top: 617px; */
   bottom: 0px;
   position: fixed;
   flex-direction: row;
@@ -1546,12 +1551,11 @@ font-weight: 400;
 font-family: "Roboto";
 }
 .payout button {
-min-height: 30px;
+min-height: 40px;
 border-radius: 10px;
 background-color: #ffffff;
 border: 1px solid #ffffff;
 width: 100px;
-height: 30px;
 font-size: 16px;
 color: #225cbc;
 font-weight: 700;
