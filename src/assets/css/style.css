@@ -631,8 +631,8 @@ img{
   color: #cda45e;
 }
 
-.absolute{
-}
+/* .absolute{
+} */
 
 .padd{
     padding-top: 16px;
@@ -1506,20 +1506,21 @@ font-weight: 400;
 font-style: italic;
 font-family: "Roboto";
 }
-.itemRightSide {
+  /* .itemRightSide {
 
-}
+  } */
 .itemRightSide button {
-cursor: pointer;
-width: 100px;
+  cursor: pointer;
+  text-transform: uppercase;
+  width: 100px;
   height: 30px;
   border-radius: 5px;
   background-color: #225cbc;
-font-size: 13px;
-color: #ffffff;
-font-weight: 700;
-font-family: "Roboto";
-border: 1px solid #225cbc;
+  font-size: 12px;
+  color: #ffffff;
+  font-weight: 700;
+  font-family: "Roboto";
+  border: 1px solid #225cbc;
 }
 .itemRightSide .chnageButton {
   width: 75px;
@@ -1544,7 +1545,8 @@ border: 1px solid #225cbc;
   padding: 16px;
 }
 
-.payout h2 { 
+.payout span { 
+text-transform: capitalize;
 font-size: 18px;
 color: #ffffff;
 font-weight: 400;
@@ -1560,7 +1562,6 @@ font-size: 16px;
 color: #225cbc;
 font-weight: 700;
 font-family: "Roboto";
-align-items: center;
 }
 
 

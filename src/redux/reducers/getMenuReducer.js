@@ -6,6 +6,7 @@ const GetMenuData = {
   addedItems: localStorage.getItem("menuItems")
     ? JSON.parse(localStorage.getItem("menuItems"))
     : [],
+  count: 0,
   apiLoading: false,
   apiGetDataSuccess: false,
   apiGetDataFail: false,
@@ -17,6 +18,7 @@ const initialState = {
 
 const getMenuData = (state = initialState, action) => {
   let addedItems = state.addedItems;
+  let count = state.count;
 
   switch (action.type) {
     case menuData.GET_MENU_REQUESTED: {
@@ -47,6 +49,7 @@ const getMenuData = (state = initialState, action) => {
       return {
         ...state,
         addedItems: addedItems,
+        count: count + 1,
       };
     }
 
@@ -58,6 +61,7 @@ const getMenuData = (state = initialState, action) => {
       return {
         ...state,
         addedItems: newCart2,
+        count: count - 1,
       };
     }
 

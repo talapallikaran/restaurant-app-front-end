@@ -5,10 +5,11 @@ import LogoutButton from "../../../components/LogoutButton";
 import MenuItem from "../../../components/MenuItem";
 
 const MenuLandingPage = (props) => {
-  const [value, setValue] = useState(0);
   const navigate = useNavigate();
 
-  const { menu, MenuFetchData, resetState, Add_To_Plate, addedItems } = props;
+  const { menu, MenuFetchData, resetState, Add_To_Plate, addedItems, count } =
+    props;
+
   const { id } = useParams();
 
   useEffect(() => {
@@ -62,7 +63,7 @@ const MenuLandingPage = (props) => {
         <div></div>
       </div>
       <div className="payout">
-        <h2>{value} itmes added</h2>
+        <span>{count} In Your plate</span>
         <button onClick={handlePayOut}>Payout</button>
       </div>
     </>
