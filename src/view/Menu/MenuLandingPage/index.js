@@ -10,6 +10,7 @@ const mapStateToProps = (state) => {
   return {
     menu: state.GetMenuData.menu.menu,
     addedItems: state.GetMenuData.addedItems,
+    count: state.GetMenuData.count,
   };
 };
 
