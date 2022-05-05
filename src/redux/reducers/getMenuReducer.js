@@ -106,6 +106,7 @@ const getMenuData = (state = initialState, action) => {
       return {
         ...state,
         addedItems: [],
+        count: 0,
       };
     }
     default:
